@@ -7,7 +7,7 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         features={"src/test/resources/restfullbooker"},
-        glue={"step.definitions"},
+        glue={"org.restfullbooker.task_1_positive_createtoken"},
         monochrome=true,
         dryRun=false,
         plugin={
