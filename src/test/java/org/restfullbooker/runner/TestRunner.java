@@ -1,4 +1,4 @@
-package runner;
+package org.restfullbooker.runner;
 
 import io.cucumber.junit.Cucumber;
 import io.cucumber.testng.CucumberOptions;

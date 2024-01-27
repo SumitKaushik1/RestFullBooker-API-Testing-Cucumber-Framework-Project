@@ -170,11 +170,7 @@
 
 
 
-    <dependency>
-      <groupId>io.cucumber</groupId>
-      <artifactId>cucumber-scala_3</artifactId>
-      <version>8.16.0</version>
-    </dependency>
+
 
     <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->
     <dependency>
@@ -185,12 +181,14 @@
     </dependency>
 
 
-
+    <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-core -->
     <dependency>
       <groupId>io.cucumber</groupId>
-      <artifactId>cucumber-jvm</artifactId>
-      <version>7.13.0</version>
+      <artifactId>cucumber-core</artifactId>
+      <version>7.15.0</version>
     </dependency>
+
+
 
 
 
