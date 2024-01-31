@@ -108,6 +108,23 @@
       <scope>test</scope>
     </dependency>
 
+    <!-- https://mvnrepository.com/artifact/org.hamcrest/hamcrest-core -->
+    <dependency>
+      <groupId>org.hamcrest</groupId>
+      <artifactId>hamcrest-core</artifactId>
+      <version>2.2</version>
+      <scope>test</scope>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/io.cucumber/gherkin -->
+    <dependency>
+      <groupId>io.cucumber</groupId>
+      <artifactId>gherkin</artifactId>
+      <version>27.0.0</version>
+    </dependency>
+
+
+
     <!-- https://mvnrepository.com/artifact/com.jayway.jsonpath/json-path -->
     <dependency>
       <groupId>com.jayway.jsonpath</groupId>
@@ -152,11 +169,12 @@
 
 
 
-    <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
+    <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->
     <dependency>
       <groupId>io.cucumber</groupId>
-      <artifactId>cucumber-java</artifactId>
+      <artifactId>cucumber-junit</artifactId>
       <version>7.15.0</version>
+      <scope>test</scope>
     </dependency>
 
 
@@ -168,17 +186,25 @@
       <version>7.15.0</version>
     </dependency>
 
-
-
-
-
-    <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->
+    <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-jvm-deps -->
     <dependency>
       <groupId>io.cucumber</groupId>
-      <artifactId>cucumber-junit</artifactId>
-      <version>7.15.0</version>
-      <scope>test</scope>
+      <artifactId>cucumber-jvm-deps</artifactId>
+      <version>1.0.6</version>
+      <scope>provided</scope>
     </dependency>
+
+
+
+
+
+    <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
+    <dependency>
+      <groupId>io.cucumber</groupId>
+      <artifactId>cucumber-java</artifactId>
+      <version>7.15.0</version>
+    </dependency>
+
 
 
     <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-core -->
@@ -188,11 +214,35 @@
       <version>7.15.0</version>
     </dependency>
 
+    <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-html -->
+    <dependency>
+      <groupId>io.cucumber</groupId>
+      <artifactId>cucumber-html</artifactId>
+      <version>0.2.7</version>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/net.masterthought/cucumber-reporting -->
+    <dependency>
+      <groupId>net.masterthought</groupId>
+      <artifactId>cucumber-reporting</artifactId>
+      <version>5.7.8</version>
+    </dependency>
+
+
+
+
+
+
+
+
 
 
 
 
   </dependencies>
+
+
+
 
 
 
@@ -311,8 +361,15 @@
         </plugin>-->
 
 
-
-
+       <!-- <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <configuration>
+                <source>8</source>
+                <target>8</target>
+            </configuration>
+        </plugin>
+        -->
     </plugins>
 
 
