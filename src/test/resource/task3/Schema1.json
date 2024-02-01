@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "$id": "http://example.com/example.json",
+  "type": "array",
+  "default": [],
+  "title": "Root Schema",
+  "items": {
+    "type": "object",
+    "title": "A Schema",
+    "required": [
+      "bookingid"
+    ],
+    "properties": {
+      "bookingid": {
+        "type": "integer",
+        "title": "The bookingid Schema",
+        "examples": [
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    "examples": [{
+      "bookingid": 1
+    },
+      {
+        "bookingid": 2
+      },
+      {
+        "bookingid": 3
+      },
+      {
+        "bookingid": 4
+      }]
+  },
+  "examples": [
+    [{
+      "bookingid": 1
+    },
+      {
+        "bookingid": 2
+      },
+      {
+        "bookingid": 3
+      },
+      {
+        "bookingid": 4
+      }]
+  ]
+}
