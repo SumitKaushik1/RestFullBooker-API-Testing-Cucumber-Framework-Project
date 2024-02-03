@@ -23,7 +23,7 @@ import java.util.Map;
 import static io.restassured.RestAssured.given;
 
 
-public class RestFullBookerCreateToken_1 {
+public class RestFullBookerCreateTokenRequestOne {
 
     // private bz i want to intialize the response in this classs i donot want ot share that resposne accross
     //any other class of even not to same package
@@ -73,10 +73,10 @@ public class RestFullBookerCreateToken_1 {
         //Response response=
         response=requestSpecification.when().post();
     }
-    @Then("verify status code {string}")
-    public void verify_status_code(String statusCode) {
 
 
+    @Then("verify responseOne status code {string}")
+    public void verify_response_one_status_code(String statusCode) {
 
 
         //1.
@@ -122,9 +122,14 @@ public class RestFullBookerCreateToken_1 {
         // r.then().log().all().body("token", Matchers.notNullValue());// Hamcrest liberary  Matchers class
         // assertion is done ie the token part should not be null then only we can store it
     }
-    @Then("verify response contains token as key")
-    public void verify_response_contains_token_as_key() {
 
+
+
+    @Then("verify responseOne contains token as key")
+    public void verify_response_one_contains_token_as_key() {
+
+        // calling method will take time so directly teh value fo final static method will save time while calling
+      //  Response response = RestFullBookerRequestTokenURL.response;
         //3. (by content ype you get-> true),true since both true matched so assertion is passed
         // Assume you have a method that returns a response string
         // Replace this with the actual method or API call that returns your response
@@ -146,15 +151,25 @@ public class RestFullBookerCreateToken_1 {
 
         // Check if the JSONObject contains the "token" key
         MatcherAssert.assertThat(jsonResponse.containsKey("token"), Matchers.is(true));
+
     }
-    @Then("verify response contains header content type")
-    public void verify_response_contains_header_content_type() {
+
+
+
+    @Then("verify responseOne contains header content type")
+    public void verify_response_one_contains_header_content_type() {
 
         //3. (by content ype you get-> true),true since both true matched so assertion is passed
         MatcherAssert.assertThat(response.getHeaders().hasHeaderWithName("Content-type"),Matchers.is( true));
+
     }
-    @Then("verify response contains token")
-    public void verify_response_contains_token() {
+
+    @Then("verify responseOne contains token")
+    public void verify_response_one_contains_token() {
+
+
+        // calling method will take time so directly teh value fo final static method will save time while calling
+     //   Response response = RestFullBookerRequestTokenURL.response;
 
         //  System.out.println(response1.asString());
         //it means with jasonpath you can get the values of response body and
@@ -184,9 +199,11 @@ public class RestFullBookerCreateToken_1 {
         // equivalent to $.token
         MatcherAssert.assertThat(response.getBody().jsonPath().getString("token"),Matchers.notNullValue());
     }
-    @Then("verify response Json Schema")
-    public void verify_response_json_schema() {
 
+
+
+    @Then("verify responseOne Json Schema")
+    public void verify_response_one_json_schema() {
 
         //1 to 4 ,all request was made till "when"  ie so upto when hamcrest liberary can be used for the validation the response
 
@@ -199,5 +216,11 @@ public class RestFullBookerCreateToken_1 {
                 .body(JsonSchemaValidator.
                         matchesJsonSchema(new File("src/test/resource/task1/schema.json")));
     }
+
+
+
+
+
+
 
 }
