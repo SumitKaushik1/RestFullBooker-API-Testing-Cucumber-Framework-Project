@@ -33,13 +33,14 @@ public class RestFullBookerCreateTokenRequestOne {
     //bydefault set to null instance variable
     public static String TOKEN;
     //bydefulat null
-   // static to use this by class name and since it is constant so the CAPITAL LETTERS ,
+   // static to use this variable directly  by class_name and since it is constant so the CAPITAL LETTERS ,
     // i want to use this token in this package and accross all package
+    //static bz to recognise in other classes from which calss it is called
 
     //full baseURI is taken from feature file here
     //{string} ->
-    @Given("Get payload from {string}")
-    public void get_payload_from(String baseUri) {
+    @Given("Get payload from urlOne {string}")
+    public void get_payload_from_urlOne(String baseUri) {
           /* payload.setUsername("admin");
                      payload.setPassword("password123");*/
 
@@ -139,7 +140,7 @@ public class RestFullBookerCreateTokenRequestOne {
         //convert the response to class
         Token token=gson.fromJson(response.asPrettyString(), Token.class);
         //asPreety string comes in the json format string easy to convert into the object
-        System.out.println("myToken"+token);
+       // System.out.println("myToken"+token);
 
         //since the jasonRespone takes only teh map so map is made with object
         Map<String,Object> map=new HashMap<>();
@@ -180,7 +181,7 @@ public class RestFullBookerCreateTokenRequestOne {
         TOKEN=jsonPath.getString("token");
 
         //static variable withing a class can be accessed
-        System.out.println(TOKEN);//$.token ->jasonpath
+       // System.out.println(TOKEN);//$.token ->jasonpath
 
         //MatcherAssert.assertThat(response.getHeaders(), hasKey("Content-Type"));
 
@@ -193,7 +194,7 @@ public class RestFullBookerCreateTokenRequestOne {
 
         //3. (by content ype you get-> true),true since both true matched so assertion is passed
         //4.
-        System.out.println(response.asPrettyString());
+       // System.out.println(response.asPrettyString());
         // "token" :"1343434", value in double quotes so it is string only ,now left side "12334" comes,right side
         // ,there is with Matcher object that it gives signal that it must not be the null value
         // equivalent to $.token
@@ -216,9 +217,6 @@ public class RestFullBookerCreateTokenRequestOne {
                 .body(JsonSchemaValidator.
                         matchesJsonSchema(new File("src/test/resource/task1/schema.json")));
     }
-
-
-
 
 
 
