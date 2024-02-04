@@ -22,30 +22,60 @@ import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
 
-import static org.restfullbooker.task_1_positive.RestFullBookerCreateTokenRequestOne.TOKEN;
+
 
 public class RestFullBookerRequestBookingTwo {
-
 
     // private bz i want to intialize the response in this classs i donot want ot share that resposne accross
     //any other class of even not to same package
 
     //every request has seperate respone we need different variable for each request
-    //static means like in any class that variable is easily easily recognied from which class it is
-    //bz it is called by teh classname.variable name
-    private static Response response;
+
+    private Response response;
     //bydefault set to null instance variable
-    private final  String TOKEN=RestFullBookerCreateTokenRequestOne.TOKEN;
+
+    //now what happens that in the metaspace space  remain intact in whole running state of till  jvm running the code
+    //so the static variabels and the classes space si remain in the metaspace till jvm is running the code
+    //stack and heap space is destroyed once the jvm has executed the scope of variabel or object or method
+    //till one class has only one static variable  corresponding to that static variable remain there till the class
+    //corresponding class remain there.
+    //(stack and heap space destroyed once the scope of code is completed by jvm )
+
+
+
+    //i want the token must be not changed that comes form other class in this class so final so once intitalized
+    //cannot not be changed further
+    private  final  String TOKEN;
+
     //bydefulat null
     // static to use this by class name and since it is constant so the CAPITAL LETTERS ,
     // i want to use this token only in this class so private but i donot want to be changed in any of below code so it is final
 
 
-    public static String  BOOKING_ID_TO_UPDATE;
+    private static String  BOOKING_ID_TO_UPDATE;
 
-    public static String  DELETED_BOOKING_ID;
+    private static String  DELETED_BOOKING_ID;
     //full baseURI is taken from feature file here
     //{string} ->
+
+
+    public RestFullBookerRequestBookingTwo() {
+        //when the 2nd scenerio of the feature file is called by jvm then form the object of it made
+        // and teh class related to that is loaded int the metaspace and then
+        //automactically the constructor is called the final data member is intialzed
+        // ie we did not made the object it is the object that jvm made in background that object also
+
+        // used to callt he methods here in below which @Given and aother annotation
+        this.TOKEN = RestFullBookerCreateTokenRequestOne.token();
+    }
+
+    public static String getBookingIdToUpdate() {
+        return BOOKING_ID_TO_UPDATE;
+    }
+
+    public static String getDeletedBookingId() {
+        return DELETED_BOOKING_ID;
+    }
 
     @Given("Get payload from urlTwo {string}")
     public void get_payload_from_url_two(String baseUri) {
@@ -69,8 +99,8 @@ public class RestFullBookerRequestBookingTwo {
         // Adding body as string
         requestSpecification.body(payload);
 
-        Response response = requestSpecification.post();
-        // Printing Response as string
+        RestFullBookerResponse response = requestSpecification.post();
+        // Printing RestFullBookerResponse as string
         System.out.println(response.asString());
 
           return response;
@@ -114,8 +144,20 @@ public class RestFullBookerRequestBookingTwo {
         // Adding body as string
         requestSpecification.body(payload);
 
+
+
+
+        //now we know when the object  RestFullBookerCreateTokenRequestOne is made by the jvm after analysing
+        // the feature file scenerio then class
+        // RestFullBookerCreateTokenRequestOne
+        //is loaded corresponding to tha all the static variable are loaded in the metaspace now
+        //since the response is private so this resposen can only be used within in class
+        // response is actually the this.response,no use of getter or setter they are used when other classes can only
+        //use that method not directly through variable ,this.response means jvm is currently working on the object
+        //  RestFullBookerCreateTokenRequestOne that
+        //this.response is assigned
         response = requestSpecification.post();
-        // Printing Response as string
+        // Printing RestFullBookerResponse as string
        // System.out.println(response.asString());
 
 
@@ -124,7 +166,7 @@ public class RestFullBookerRequestBookingTwo {
     public void verify_response_two_status_code(String string) {
         // calling method will take time so directly teh value fo final static
         //method will save time while calling
-       // Response response =RestFullBookerRequestBookingURL.response;
+       // RestFullBookerResponse response =RestFullBookerRequestBookingURL.response;
 
 
         MatcherAssert.assertThat(response.getStatusCode(), Matchers.is(200));// Write code here that turns the phrase above into concrete actions
@@ -134,7 +176,7 @@ public class RestFullBookerRequestBookingTwo {
     public void verify_response_two_contains_bookingId_as_key() {
 
         // calling method will take time so directly teh value fo final static method will save time while calling
-       // Response response =RestFullBookerRequestBookingURL.response;
+       // RestFullBookerResponse response =RestFullBookerRequestBookingURL.response;
         //3. (by content ype you get-> true),true since both true matched so assertion is passed
         // Assume you have a method that returns a response string
         // Replace this with the actual method or API call that returns your response
@@ -161,7 +203,7 @@ public class RestFullBookerRequestBookingTwo {
     public void verify_response_two_contains_header_content_type() {
 
         // calling method will take time so directly teh value fo final static method will save time while calling
-    //    Response response =RestFullBookerRequestBookingURL.response;
+    //    RestFullBookerResponse response =RestFullBookerRequestBookingURL.response;
         //3. (by content ype you get-> true),true since both true matched so assertion is passed
      //   System.out.println(response.getHeaders().toString());
         MatcherAssert.assertThat(response.getHeaders().hasHeaderWithName("Content-type"), Matchers.is(true));
@@ -169,7 +211,7 @@ public class RestFullBookerRequestBookingTwo {
     @Then("verify  responseTwo contains bookingId")
     public void verify_response_two_contains_bookingId() {
         // calling method will take time so directly teh value fo final static method will save time while calling
-      //  Response response =RestFullBookerRequestBookingURL.response;
+      //  RestFullBookerResponse response =RestFullBookerRequestBookingURL.response;
 
         //  System.out.println(response1.asString());
         //it means with jasonpath you can get the values of response body and
@@ -204,7 +246,7 @@ public class RestFullBookerRequestBookingTwo {
     @Then("verify  responseTwo Json Schema")
     public void verify_response_two_json_schema() {
         // calling method will take time so directly teh value fo final static method will save time while calling
-       // Response response =RestFullBookerRequestBookingURL.response;
+       // RestFullBookerResponse response =RestFullBookerRequestBookingURL.response;
         //1 to 4 ,all request was made till "when"  ie so upto when hamcrest liberary can be used for the validation the response
 
         //5. in this then() has to used which return the implementation class of validation reponse which  can help easily to validate the schema

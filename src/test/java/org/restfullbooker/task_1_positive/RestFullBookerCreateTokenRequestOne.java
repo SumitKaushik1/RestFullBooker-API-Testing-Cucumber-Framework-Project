@@ -24,23 +24,53 @@ import static io.restassured.RestAssured.given;
 
 
 public class RestFullBookerCreateTokenRequestOne {
-
     // private bz i want to intialize the response in this classs i donot want ot share that resposne accross
     //any other class of even not to same package
 
-    //every request has seperate respone we need different variable for each request
-    private static  Response response;
-    //bydefault set to null instance variable
-    public static String TOKEN;
-    //bydefulat null
-   // static to use this variable directly  by class_name and since it is constant so the CAPITAL LETTERS ,
-    // i want to use this token in this package and accross all package
-    //static bz to recognise in other classes from which calss it is called
+    //every request has seperate response we need different variable for each request
 
-    //full baseURI is taken from feature file here
-    //{string} ->
+    //you know the feature file is loaded then teh corresponding jvm see the methods of that class then it makes the object and call the
+    //class is loaded corresponding  to that then the all static variables inside it then jvm is able to call the methods inside it
+    // so we cannot make the final static variable of response just like previous assignment bz method {string} we cannot provide argument
+    //only jvm can provide so ,we cannot alos make the finla non static variable reason as below
+    //methods of it
+    //if i take "private final Response response1" as teh data member  --> then at the time of when   RestFullBookerCreateTokenRequestOne class is loaded
+    //then object is made of it  then the
+
+    //when the this RestFullBookerCreateTokenRequestOne metaspace object  is made in heap by jvm after anysying the feature file then the
+    // class of RestFullBookerCreateTokenRequestOne is loaded in the metaspace  at the back now using that object firstly
+    //since at the back non paramterized constructor is ther so the data variable is assingned null value
+    //bydeafult since it is final it remain null throughout and whihc is problem so we cannot use it agian
+
+
+
+
+
+    // so only security is remained that private directly the variable name has to be used in throughout no security
+    private Response response;
+
+    //bydefault set to null instance variable
+
+
+    //i want token must be assigned in this class not in other class so private
+    //data member not used other classes only be used in this class
+    //other classes can be used it by classname.method
+
+    //static is easy to called by the classnaem thats why
+    private static String token;
+
+
+    // but i donot wnat that varicalt to change direclty
+    //if someone outer class  want get the value ,it can use the static method direclty by classname
+    public static String token() {
+        return token;
+    }
+
+
+
+
     @Given("Get payload from urlOne {string}")
-    public void get_payload_from_urlOne(String baseUri) {
+    public  void get_payload_from_urlOne(String baseUri) {
           /* payload.setUsername("admin");
                      payload.setPassword("password123");*/
 
@@ -54,13 +84,13 @@ public class RestFullBookerCreateTokenRequestOne {
 
 
 
-
-
         Customer customer=new Customer("admin","password123");//directly passing the object to body
         //giving me error so we has to change the suitable string using the Gson then pass to the body of response
         Gson gson=new Gson();
         String payload= gson.toJson(customer);
         RequestSpecification requestSpecification= given();
+
+
 
 
         requestSpecification.baseUri(baseUri);
@@ -69,15 +99,29 @@ public class RestFullBookerCreateTokenRequestOne {
         requestSpecification.contentType(ContentType.JSON);//header is set
         requestSpecification.body(payload);//it will set as the class for payload (no map and string )
         // , class for more than 150 test case
-        /* Response response=*/ // and it can be dynamic
+        /* RestFullBookerResponse response=*/ // and it can be dynamic
         //since the payload is the object type so the body has the overloaded method which has argument Object
-        //Response response=
+
+
+
+
+
+        //now we know when the object  RestFullBookerCreateTokenRequestOne is made by the jvm after analysing
+        // the feature file scenerio then class
+        // RestFullBookerCreateTokenRequestOne
+        //is loaded corresponding to tha all the static variable are loaded in the metaspace now
+        //since the response is private so this resposen can only be used within in class
+        // response is actually the this.response,no use of getter or setter they are used when other classes can only
+        //use that method not directly through variable ,this.response means jvm is currently working on the object
+        //  RestFullBookerCreateTokenRequestOne that
+        //this.response is assigned
         response=requestSpecification.when().post();
+
     }
 
-
+    //private means only used within class
     @Then("verify responseOne status code {string}")
-    public void verify_response_one_status_code(String statusCode) {
+    public  void verify_response_one_status_code(String statusCode) {
 
 
         //1.
@@ -125,12 +169,12 @@ public class RestFullBookerCreateTokenRequestOne {
     }
 
 
-
+    //private means only used within class
     @Then("verify responseOne contains token as key")
-    public void verify_response_one_contains_token_as_key() {
+    public  void verify_response_one_contains_token_as_key() {
 
         // calling method will take time so directly teh value fo final static method will save time while calling
-      //  Response response = RestFullBookerRequestTokenURL.response;
+      //  RestFullBookerResponse response = RestFullBookerRequestTokenURL.response;
         //3. (by content ype you get-> true),true since both true matched so assertion is passed
         // Assume you have a method that returns a response string
         // Replace this with the actual method or API call that returns your response
@@ -156,21 +200,23 @@ public class RestFullBookerCreateTokenRequestOne {
     }
 
 
-
+    //private means only used within class
     @Then("verify responseOne contains header content type")
-    public void verify_response_one_contains_header_content_type() {
+    public  void verify_response_one_contains_header_content_type() {
 
         //3. (by content ype you get-> true),true since both true matched so assertion is passed
         MatcherAssert.assertThat(response.getHeaders().hasHeaderWithName("Content-type"),Matchers.is( true));
 
     }
 
+
+    //private means only used within class
     @Then("verify responseOne contains token")
-    public void verify_response_one_contains_token() {
+    public  void verify_response_one_contains_token() {
 
 
         // calling method will take time so directly teh value fo final static method will save time while calling
-     //   Response response = RestFullBookerRequestTokenURL.response;
+     //   RestFullBookerResponse response = RestFullBookerRequestTokenURL.response;
 
         //  System.out.println(response1.asString());
         //it means with jasonpath you can get the values of response body and
@@ -178,7 +224,7 @@ public class RestFullBookerCreateTokenRequestOne {
 
         //2. to get value from the response use the jsonpath
         JsonPath jsonPath = new JsonPath(response.asString());
-        TOKEN=jsonPath.getString("token");
+        token=jsonPath.getString("token");
 
         //static variable withing a class can be accessed
        // System.out.println(TOKEN);//$.token ->jasonpath
@@ -202,9 +248,9 @@ public class RestFullBookerCreateTokenRequestOne {
     }
 
 
-
+    //private means only used within class
     @Then("verify responseOne Json Schema")
-    public void verify_response_one_json_schema() {
+    public  void verify_response_one_json_schema() {
 
         //1 to 4 ,all request was made till "when"  ie so upto when hamcrest liberary can be used for the validation the response
 
