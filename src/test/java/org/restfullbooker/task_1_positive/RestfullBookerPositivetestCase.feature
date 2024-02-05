@@ -1,5 +1,6 @@
 Feature: Task1_positive
 
+  # one scenerio is like sending one request and getting the response and test it
   Scenario Outline: Post request to create token
     Given  Get payload from urlOne "<url>"
     Then  verify responseOne status code "<msg>"
@@ -25,6 +26,18 @@ Feature: Task1_positive
       | url   | msg |
       | https://restful-booker.herokuapp.com/booking | 200 |
 
+
+
+  Scenario Outline: Post request to update bookingName
+    Given  Get payload from urlThree "<url>"
+    Then  verify responseThree status code "<msg>"
+    And  verify  responseThree contains fistname exist
+    And  verify  responseThree contains header content type
+    And  verify  responseThree Json Schema
+
+    Examples:
+      | url   | msg |
+      | https://restful-booker.herokuapp.com/booking | 200 |
 
 
 

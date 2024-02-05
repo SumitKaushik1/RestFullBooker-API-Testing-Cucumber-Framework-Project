@@ -28,7 +28,6 @@ public class RestFullBookerRequestBookingTwo {
 
     // private bz i want to intialize the response in this classs i donot want ot share that resposne accross
     //any other class of even not to same package
-
     //every request has seperate respone we need different variable for each request
 
     private Response response;
@@ -45,15 +44,18 @@ public class RestFullBookerRequestBookingTwo {
 
     //i want the token must be not changed that comes form other class in this class so final so once intitalized
     //cannot not be changed further
+
+    //jvm made object will call the parameterized constructor below
+    //it is final whatever teh value imported here must not be changed throughout below while making the request
     private  final  String TOKEN;
-
-    //bydefulat null
-    // static to use this by class name and since it is constant so the CAPITAL LETTERS ,
-    // i want to use this token only in this class so private but i donot want to be changed in any of below code so it is final
+    //it msut be used within the class only so private
 
 
+
+    // it must be used within the class only so private
     private static String  BOOKING_ID_TO_UPDATE;
 
+    // it must be used within the class only so private
     private static String  DELETED_BOOKING_ID;
     //full baseURI is taken from feature file here
     //{string} ->
@@ -69,6 +71,13 @@ public class RestFullBookerRequestBookingTwo {
         this.TOKEN = RestFullBookerCreateTokenRequestOne.token();
     }
 
+
+    // i donot want that booking id must be set diffent in outer classses so only the getter is provided here
+    //no setter is provided here ot change the value of bookign id ,only whatevert the value commes here
+    //it will be used in other classes
+
+
+    //i donot want the other classes to change the value whatever come in resposne in below code
     public static String getBookingIdToUpdate() {
         return BOOKING_ID_TO_UPDATE;
     }
@@ -224,7 +233,7 @@ public class RestFullBookerRequestBookingTwo {
         // means right to left ie b=c,a=b
 
         //static variable withing a class can be accessed
-        //System.out.println(BOOKING_ID_TO_UPDATE);//$.bookingid ->jasonpath
+       // System.out.println(BOOKING_ID_TO_UPDATE);//$.bookingid ->jasonpath
 
         //MatcherAssert.assertThat(response.getHeaders(), hasKey("Content-Type"));
 
@@ -237,7 +246,7 @@ public class RestFullBookerRequestBookingTwo {
 
         //3. (by content ype you get-> true),true since both true matched so assertion is passed
         //4.
-       // System.out.println(response.asPrettyString());
+      // System.out.println(response.asPrettyString());
         // "token" :"1343434", value in double quotes so it is string only ,now left side "12334" comes,right side
         // ,there is with Matcher object that it gives signal that it must not be the null value
         // equivalent to $.token

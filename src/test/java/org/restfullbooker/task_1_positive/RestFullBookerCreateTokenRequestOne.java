@@ -47,6 +47,8 @@ public class RestFullBookerCreateTokenRequestOne {
 
 
     // so only security is remained that private directly the variable name has to be used in throughout no security
+
+    //jvm made object will have its own non parameterized constructor and make it null bydefault
     private Response response;
 
     //bydefault set to null instance variable
@@ -57,6 +59,8 @@ public class RestFullBookerCreateTokenRequestOne {
     //other classes can be used it by classname.method
 
     //static is easy to called by the classnaem thats why
+
+    //jvm made object will have its own non parameterized constructor and make it null bydefault
     private static String token;
 
 
