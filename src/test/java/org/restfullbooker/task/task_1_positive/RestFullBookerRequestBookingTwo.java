@@ -1,7 +1,6 @@
-package org.restfullbooker.task_1_positive;
+package org.restfullbooker.task.task_1_positive;
 
 import com.google.gson.Gson;
-import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.restassured.RestAssured;
@@ -16,7 +15,6 @@ import org.hamcrest.MatcherAssert;
 import org.hamcrest.Matchers;
 import org.restfullbooker.pojorequest.BookingDetails;
 import org.restfullbooker.pojoresponse.BookingDetailsResponse;
-import org.restfullbooker.pojoresponse.Token;
 
 import java.io.File;
 import java.util.HashMap;

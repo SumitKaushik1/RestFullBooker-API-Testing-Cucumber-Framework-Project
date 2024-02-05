@@ -1,23 +1,16 @@
-package org.restfullbooker.task_1_positive;
+package org.restfullbooker.task.task_2_positive;
 
-import com.google.gson.Gson;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
-import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
-import io.restassured.module.jsv.JsonSchemaValidator;
-import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
-import io.restassured.response.ValidatableResponse;
 import io.restassured.specification.RequestSpecification;
-import net.minidev.json.JSONObject;
-import org.hamcrest.MatcherAssert;
-import org.hamcrest.Matchers;
+import org.restfullbooker.task.task_1_positive.RestFullBookerRequestBookingTwo;
 
-import java.io.File;
+import static io.restassured.RestAssured.given;
 
-public class RestFullBookerRequestUpdateBookingNameThree {
-    // private bz i want to intialize the response in this classs i donot want ot share that resposne accross
+public class RestfullBookerRequestDeleteUserOne {
+// private bz i want to intialize the response in this classs i donot want ot share that resposne accross
     //any other class of even not to same package
     //every request has seperate respone we need different variable for each request
 
@@ -34,62 +27,71 @@ public class RestFullBookerRequestUpdateBookingNameThree {
 
 
 
-    //i want the token must be not changed that comes form other class in this class so final so once intitalized
+    //i want the  bookingidtodelete must be not changed that comes form other class in this class so final so once intitalized
     //cannot not be changed further
 
     //jvm made object will call the parameterized constructor below
     //it is final whatever teh value imported here must not be changed throughout below while making the request
 
-    private  final  String BOOKING_ID_TO_UPDATE;
+    //jvm made object will call the parameterized constructor below
+    //it is final whatever teh value imported here must not be changed throughout below while making the request
+
+    private final  String BOOKING_ID_TO_DELETE;
     //it msut be used within the class only so private
 
 
-    public RestFullBookerRequestUpdateBookingNameThree() {
+    public RestfullBookerRequestDeleteUserOne() {
 
-        //when the 3nd scenerio of the feature file is called by jvm then form the object of it made
+        //when the 1st scenerio of the feature file is called by jvm then form the object of it made
         // and teh class related to that is loaded int the metaspace and then
         //automactically the constructor is called the final data member is intialzed
         // ie we did not made the object it is the object that jvm made in background that object also
 
         // used to callt he methods here in below which @Given and aother annotation
-        this.BOOKING_ID_TO_UPDATE = RestFullBookerRequestBookingTwo.getBookingIdToUpdate();
+        this.BOOKING_ID_TO_DELETE = RestFullBookerRequestBookingTwo.getDeletedBookingId();
     }
 
 
 
-    @Given("Get payload from urlThree {string}")
-    public void get_payload_from_url_three(String baseUri) {
-        JSONObject bookingDetails=new JSONObject();
-        bookingDetails.put("firstname","James");
-        //BookingDetails bookingDetails=new BookingDetails("James");
-        //directly passing the object to body
-        //when two clases closely packed so no need to creat the inner class as the seperate classs and try to import
-        // instead make it as the inner nested  class and and you can save a one .java file
 
 
-        //giving me error so we has to change the suitable string using the Gson then pass to the body of response
-        Gson gson=new Gson();
-        String payload= gson.toJson(bookingDetails);
-       // System.out.println(payload);
 
 
-        RequestSpecification requestSpecification= RestAssured.given();
-        // Setting content type to specify format in which request payload will be sent.
-        // ContentType is an ENUM.
-        requestSpecification.contentType(ContentType.JSON);
-        // requestSpecification.accept(ContentType.JSON);//header is set
-        //note bydefault the accept header response is json no need to specify that otherwise it will give error
 
 
-        //we can change the resource by two things
-        //1. either we should have the token by supplying the username and password
-        //2. we have to directly use the basic authorization by supplying the username and passowrd
+
+
+    @Given("delete bookingid  urlOne {string}")
+    public void delete_bookingid_url_one( String baseUri) {
+       /* payload.setUsername("admin");
+                     payload.setPassword("password123");*/
+
+                   /*  String payload = "{\n" +
+                             "    \"username\" : \"admin\",\n" +
+                             "    \"password\" : \"password123\"\n" +
+                             "}";*/
+        //serialisation means to convert the object in the byte of streams (ie the jason format or xml format) then \
+        // 10110 is send on the network
+
+
+
+        RequestSpecification requestSpecification= given();
+
+
+        requestSpecification.baseUri(baseUri+"/"+BOOKING_ID_TO_DELETE);
+       // requestSpecification.basePath("/booking/"+deletedbookingid);
+        requestSpecification.contentType(ContentType.JSON);//header is set
+
+        requestSpecification.auth().preemptive().basic("admin","password123");
+        //either you provide basic auth or the token as below
+
+
+
+
         //System.out.println(token);
         // requestSpecification.cookie(token);
 
-        requestSpecification.auth().preemptive().basic("admin","password123");
-
-             /*
+        /*
 
                    what is meant by preemptive in this -->requestSpecification.auth().preemptive().basic("admin","password123");
 
@@ -164,78 +166,22 @@ public class RestFullBookerRequestUpdateBookingNameThree {
 
 
 
-        // Adding URI
-        requestSpecification.baseUri(baseUri);
-      //  System.out.println(BOOKING_ID_TO_UPDATE);
-        requestSpecification.baseUri(baseUri+"/"+BOOKING_ID_TO_UPDATE);
-
-        // Adding body as string
-        requestSpecification.body(payload);
-         response = requestSpecification.patch();
-        // Printing Response as string
-        //System.out.println(response.asString());
 
 
+
+
+
+
+       response=  requestSpecification.when().delete();
     }
-    @Then("verify responseThree status code {string}")
-    public void verify_response_three_status_code(String string) {
-
-        MatcherAssert.assertThat(response.getStatusCode(), Matchers.is(200));
+    @Then("verify responseFive status code {string}")
+    public void verify_response_five_status_code(String string) {
+        // Write code here that turns the phrase above into concrete actions
+        throw new io.cucumber.java.PendingException();
     }
-
-
-    @Then("verify  responseThree contains fistname exist")
-    public void verify_response_three_contains_fistname_exist() {
-        //  System.out.println(response1.asString());
-        //it means with jasonpath you can get the values of response body and
-        // with hemcrest you can assert the values of response headers and the respone body,status code,
-
-        //2. to get value from the response use the jsonpath
-        JsonPath jsonPath = new JsonPath(response.asString());
-        String firstname=jsonPath.getString("firstname");
-
-        //static variable withing a class can be accessed
-       // System.out.println("firstName"+firstname);//$.firstname ->jasonpath
-
-        //MatcherAssert.assertThat(response.getHeaders(), hasKey("Content-Type"));
-
-
-        //Restfull booker is the class which is loaded first then all the static variable inside that class loaded then
-        // so static variable is at the class level when then7 class the destroyed in then only static variable is destroyed
-        //per class you can make only one type of variable name can be static variable.
-
-
-
-        //3. (by content ype you get-> true),true since both true matched so assertion is passed
-        //4.
-       // System.out.println(response.asPrettyString());
-        // "token" :"1343434", value in double quotes so it is string only ,now left side "12334" comes,right side
-        // ,there is with Matcher object that it gives signal that it must not be the null value
-        // equivalent to $.token
-        MatcherAssert.assertThat(response.getBody().jsonPath().getString("firstname"),Matchers.notNullValue());
+    @Then("verify responseFive contains header content type")
+    public void verify_response_five_contains_header_content_type() {
+        // Write code here that turns the phrase above into concrete actions
+        throw new io.cucumber.java.PendingException();
     }
-    @Then("verify  responseThree contains header content type")
-    public void verify_response_three_contains_header_content_type() {
-
-        //3. (by content ype you get-> true),true since both true matched so assertion is passed
-       // System.out.println(response.getHeaders().toString());
-        MatcherAssert.assertThat(response.getHeaders().hasHeaderWithName("Content-type"),Matchers.is(true));
-
-    }
-    @Then("verify  responseThree Json Schema")
-    public void verify_response_three_json_schema() {
-
-        //5. in this then() has to used which return the implementation class of validation reponse which  can help easily to validate the schema
-        ValidatableResponse validatableResponse =response.then();
-
-
-
-        validatableResponse.assertThat()
-                .body(JsonSchemaValidator.
-                        matchesJsonSchema(new File("src/test/resource/task1/schema2.json")));  // Write code here that turns the phrase above into concrete actions
-
-    }
-
-
-
 }

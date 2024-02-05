@@ -1,4 +1,4 @@
-package org.restfullbooker.task_1_positive;
+package org.restfullbooker.task.task_1_positive;
 
 
 import com.google.gson.Gson;

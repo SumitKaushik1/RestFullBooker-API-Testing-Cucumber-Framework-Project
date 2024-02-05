@@ -28,7 +28,7 @@ Feature: Task1_positive
 
 
 
-  Scenario Outline: Post request to update bookingName
+  Scenario Outline: patch request  to update bookingName
     Given  Get payload from urlThree "<url>"
     Then  verify responseThree status code "<msg>"
     And  verify  responseThree contains fistname exist
@@ -41,6 +41,16 @@ Feature: Task1_positive
 
 
 
+  Scenario Outline: Get  request to get  booking
+    Given  Get payload from urlFour "<url>"
+    Then  verify responseFour status code "<msg>"
+    And  verify  responseFour contains fistname exist
+    And  verify  responseFour contains header content type
+    And  verify  responseFour Json Schema
+
+    Examples:
+      | url   | msg |
+      | https://restful-booker.herokuapp.com/booking | 200 |
 
 
 

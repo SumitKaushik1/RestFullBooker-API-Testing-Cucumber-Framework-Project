@@ -1,4 +1,4 @@
-package org.restfullbooker.task_1_positive;
+package org.restfullbooker.runner;
 
 
 import io.cucumber.junit.Cucumber;
@@ -12,8 +12,9 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features={"src/test/java/org/restfullbooker/task_1_positive"},
-        glue={"org.restfullbooker.task_1_positive"},
+        //you can provdie comma ,if you want any two feature file to run
+        features={"src/test/resource/featurefiles"},
+        glue={"org.restfullbooker.task"},
 
         plugin = {
 
