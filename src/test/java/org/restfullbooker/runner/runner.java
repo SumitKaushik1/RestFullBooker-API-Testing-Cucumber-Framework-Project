@@ -17,7 +17,8 @@ import org.junit.runner.RunWith;
         glue={"org.restfullbooker.task"},
 
         plugin = {
-
+                 "json:target/CucumberReports/CucumberReport.json",
+                "junit:target/CucumberReports/CucumberReport.xml",
                 "html:target/CucumberReport.html","pretty"
         })
 

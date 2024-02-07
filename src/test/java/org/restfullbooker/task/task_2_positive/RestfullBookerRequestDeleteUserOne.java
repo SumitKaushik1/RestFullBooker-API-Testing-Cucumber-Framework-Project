@@ -5,6 +5,8 @@ import io.cucumber.java.en.Then;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
+import org.hamcrest.MatcherAssert;
+import org.hamcrest.Matchers;
 import org.restfullbooker.task.task_1_positive.RestFullBookerRequestBookingTwo;
 
 import static io.restassured.RestAssured.given;
@@ -61,8 +63,8 @@ public class RestfullBookerRequestDeleteUserOne {
 
 
 
-    @Given("delete bookingid  urlOne {string}")
-    public void delete_bookingid_url_one( String baseUri) {
+    @Given("delete bookingid  urlFive {string}")
+    public void delete_bookingid_url_five( String baseUri) {
        /* payload.setUsername("admin");
                      payload.setPassword("password123");*/
 
@@ -176,12 +178,21 @@ public class RestfullBookerRequestDeleteUserOne {
     }
     @Then("verify responseFive status code {string}")
     public void verify_response_five_status_code(String string) {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+
+
+
+
+        MatcherAssert.assertThat(response.getStatusCode(), Matchers.is(204));
+        //deifnitly it will give bug bz in documents 201 is there but on the delete http respone must be 204
+        //no content
     }
     @Then("verify responseFive contains header content type")
     public void verify_response_five_contains_header_content_type() {
         // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+        //3. (by content ype you get-> true),true since both true matched so assertion is passed
+       // System.out.println(response.getHeaders().toString());
+        MatcherAssert.assertThat(response.getHeaders().hasHeaderWithName("Content-type"),Matchers.is(true));
     }
+
+
 }

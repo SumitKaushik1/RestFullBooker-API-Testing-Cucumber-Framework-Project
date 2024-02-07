@@ -1,8 +1,8 @@
-Feature: Task2_positive
+Feature: Task_2_positive
 
   # one scenerio is like sending one request and getting the response and test it
   Scenario Outline: Delete request
-    Given  delete bookingid  urlOne "<url>"
+    Given  delete bookingid  urlFive "<url>"
     Then  verify responseFive status code "<msg>"
     And  verify responseFive contains header content type
     Examples:
@@ -12,7 +12,7 @@ Feature: Task2_positive
 
      # one scenerio is like sending one request and getting the response and test it
   Scenario Outline: Get request for deleted user
-    Given  Get bookingid  urlOne "<url>"
+    Given  Get bookingid  urlSix "<url>"
     Then  verify responseSix status code "<msg>"
     And  verify responseSix contains header content type
     Examples:

@@ -54,8 +54,8 @@ public class RestfullBookerGetDeletedUserTwo {
     }
 
 
-    @Given("Get bookingid  urlOne {string}")
-    public void get_bookingid_url_one(String baseUri) {
+    @Given("Get bookingid  urlSix {string}")
+    public void get_bookingid_url_six(String baseUri) {
         RequestSpecification requestSpecification= RestAssured.given();
         // Setting content type to specify format in which request payload will be sent.
         // ContentType is an ENUM.
