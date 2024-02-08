@@ -8,7 +8,7 @@ import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import org.hamcrest.MatcherAssert;
 import org.hamcrest.Matchers;
-import org.restfullbooker.task.task_1_positive.RestFullBookerRequestBookingTwo;
+import org.restfullbooker.task.task_1_positive.RestFullBookerCreateBookingTwo;
 
 public class RestfullBookerGetDeletedUserTwo {
     // private bz i want to intialize the response in this classs i donot want ot share that resposne accross
@@ -50,7 +50,7 @@ public class RestfullBookerGetDeletedUserTwo {
         // ie we did not made the object it is the object that jvm made in background that object also
 
         // used to callt he methods here in below which @Given and aother annotation
-        this.BOOKING_ID_TO_DELETE = RestFullBookerRequestBookingTwo.getDeletedBookingId();
+        this.BOOKING_ID_TO_DELETE = RestFullBookerCreateBookingTwo.getDeletedBookingId();
     }
 
 

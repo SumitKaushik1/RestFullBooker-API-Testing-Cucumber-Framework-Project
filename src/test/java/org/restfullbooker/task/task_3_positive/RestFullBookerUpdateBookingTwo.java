@@ -15,6 +15,8 @@ import org.restfullbooker.pojorequest.BookingDetails;
 
 import java.io.File;
 
+import static org.restfullbooker.task.task_3_positive.RestFullBookerGetAllBookingOne.getBookingIdToUpdate;
+
 public class RestFullBookerUpdateBookingTwo {
 
     // private bz i want to intialize the response in this classs i donot want ot share that resposne accross
@@ -154,7 +156,7 @@ public class RestFullBookerUpdateBookingTwo {
 
 
         // Adding URI
-        requestSpecification.baseUri(baseUri+"/"+RestFullBookerGetAllBookingOne.getBookingIdToUpdate());
+        requestSpecification.baseUri(baseUri+"/"+getBookingIdToUpdate());
       //  System.out.println("mybooking id"+bookingidToUpdate1);
        // requestSpecification.basePath("/booking/"+bookingidToUpdate1);
 
@@ -206,7 +208,7 @@ public class RestFullBookerUpdateBookingTwo {
 
         //3. (by content ype you get-> true),true since both true matched so assertion is passed
         //4.
-        System.out.println(response.asPrettyString());
+     //   System.out.println(response.asPrettyString());
         // "token" :"1343434", value in double quotes so it is string only ,now left side "12334" comes,right side
         // ,there is with Matcher object that it gives signal that it must not be the null value
         // equivalent to $.token

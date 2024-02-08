@@ -22,7 +22,7 @@ import java.util.Map;
 
 
 
-public class RestFullBookerRequestBookingTwo {
+public class RestFullBookerCreateBookingTwo {
 
     // private bz i want to intialize the response in this classs i donot want ot share that resposne accross
     //any other class of even not to same package
@@ -59,7 +59,7 @@ public class RestFullBookerRequestBookingTwo {
     //{string} ->
 
 
-    public RestFullBookerRequestBookingTwo() {
+    public RestFullBookerCreateBookingTwo() {
         //when the 2nd scenerio of the feature file is called by jvm then form the object of it made
         // and teh class related to that is loaded int the metaspace and then
         //automactically the constructor is called the final data member is intialzed

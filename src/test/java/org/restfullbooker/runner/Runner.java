@@ -16,6 +16,7 @@ import org.junit.runner.RunWith;
         features={"src/test/resource/featurefiles"},
         glue={"org.restfullbooker.task"},
 
+
         plugin = {
                  "json:target/CucumberReports/CucumberReport.json",
                 "junit:target/CucumberReports/CucumberReport.xml",
@@ -24,6 +25,6 @@ import org.junit.runner.RunWith;
 
 
 
-public class runner {
+public class Runner {
 
 }

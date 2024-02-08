@@ -11,7 +11,6 @@ import io.restassured.response.ValidatableResponse;
 import io.restassured.specification.RequestSpecification;
 import org.hamcrest.MatcherAssert;
 import org.hamcrest.Matchers;
-import org.restfullbooker.task.task_1_positive.RestFullBookerRequestBookingTwo;
 
 import java.io.File;
 

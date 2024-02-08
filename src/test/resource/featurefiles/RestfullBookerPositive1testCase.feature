@@ -1,3 +1,4 @@
+@priorty2
 Feature: Task_2_positive
 
   # one scenerio is like sending one request and getting the response and test it

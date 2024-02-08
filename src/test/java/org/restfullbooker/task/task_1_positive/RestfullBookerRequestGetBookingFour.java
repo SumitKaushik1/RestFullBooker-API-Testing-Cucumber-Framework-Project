@@ -51,7 +51,7 @@ public class RestfullBookerRequestGetBookingFour {
         // ie we did not made the object it is the object that jvm made in background that object also
 
         // used to callt he methods here in below which @Given and aother annotation
-        this.BOOKING_ID_TO_UPDATE = RestFullBookerRequestBookingTwo.getBookingIdToUpdate();
+        this.BOOKING_ID_TO_UPDATE = RestFullBookerCreateBookingTwo.getBookingIdToUpdate();
     }
 
     @Given("Get payload from urlFour {string}")
