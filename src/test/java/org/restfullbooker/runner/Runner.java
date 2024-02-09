@@ -2,15 +2,19 @@ package org.restfullbooker.runner;
 
 
 import io.cucumber.junit.Cucumber;
-import io.cucumber.junit.CucumberOptions;
+
+
+import io.cucumber.testng.AbstractTestNGCucumberTests;
+import io.cucumber.testng.CucumberOptions;
 import org.junit.runner.RunWith;
+import org.testng.annotations.Test;
 
 //feature to tell feature file where it is
 //glue to attach feature file to it
 //preety to show colourfull output on console
 //html:target/CucumberReport.html to give the cucumber report
 
-@RunWith(Cucumber.class)
+//@RunWith(Cucumber.class)
 @CucumberOptions(
         //you can provdie comma ,if you want any two feature file to run
         features={"src/test/resource/featurefiles"},
@@ -24,7 +28,7 @@ import org.junit.runner.RunWith;
         })
 
 
-
-public class Runner {
+@Test
+public class Runner  extends AbstractTestNGCucumberTests {
 
 }

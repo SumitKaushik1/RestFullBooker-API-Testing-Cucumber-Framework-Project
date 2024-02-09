@@ -1,4 +1,4 @@
-@priorty1
+
 Feature: Task_1_positive
 
 
