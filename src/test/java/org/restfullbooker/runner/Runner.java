@@ -17,8 +17,8 @@ import org.testng.annotations.Test;
 //@RunWith(Cucumber.class)
 @CucumberOptions(
         //you can provdie comma ,if you want any two feature file to run
-        features={"src/test/resource/featurefiles"},
-        glue={"org.restfullbooker.task"},
+        features={"src/test/resource/featurefiles/RestfullBookerPositivetestCase.feature"},
+        glue={"org.restfullbooker.task.task_1_positive"},
 
 
         plugin = {

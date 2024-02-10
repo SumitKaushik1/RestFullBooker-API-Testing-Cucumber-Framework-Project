@@ -6,7 +6,12 @@
 
             <classes>
                 <class name="org.restfullbooker.runner.Runner"/>
+                <class name="org.restfullbooker.runner.Runner1"/>
+                <class name="org.restfullbooker.runner.Runner2"/>
+                <class name="org.restfullbooker.runner.Runner3"/>
             </classes>
+
+
 
     </test>
 </suite>
