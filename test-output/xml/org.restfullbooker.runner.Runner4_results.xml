@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="J:\3. automation testing\day36 ---full CUCUMBER BDD(framework), passingvaluesjustlikeenviromentvariabelinpostman\Assignment answer\com.restfullbooker"
+           tests="2"
+           failures="1"
+           errors="0"
+           skipped="0"
+           time="2.504">
+    <properties></properties>
+
+            <testcase
+                name="runScenario"
+                time="1.225"
+                classname="org.restfullbooker.runner.Runner4">
+
+            <failure type="io.cucumber.java.PendingException" message="TODO: implement me">
+                <![CDATA[io.cucumber.java.PendingException: TODO: implement me
+                org.restfullbooker.task.task_5_negative.RestFullBookerWrongPayloadTwo.verify_response_thirteen_status_code(RestFullBookerWrongPayloadTwo.java:139)✽.verify responseThirteen status code  "500"(file:///J:/3.%20automation%20testing/day36%20---full%20CUCUMBER%20BDD(framework),%20passingvaluesjustlikeenviromentvariabelinpostman/Assignment%20answer/com.restfullbooker/src/test/resource/featurefiles/RestFullBookerPostivetestCases_05.feature:18)
+]]>
+            </failure>
+    </testcase>
+
+
+            <testcase
+                name="runScenario"
+                time="1.279"
+                classname="org.restfullbooker.runner.Runner4">
+            </testcase>
+</testsuite>

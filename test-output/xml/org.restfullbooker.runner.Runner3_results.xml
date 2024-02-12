@@ -4,53 +4,21 @@
            failures="1"
            errors="0"
            skipped="0"
-           time="1.420">
+           time="2.693">
     <properties></properties>
 
             <testcase
                 name="runScenario"
-                time="0.080"
+                time="1.236"
                 classname="org.restfullbooker.runner.Runner3">
 
-            <failure type="io.cucumber.testng.UndefinedStepException" message="The step &apos;delete bookingid  urlEleven &quot;https://restful-booker.herokuapp.com/booking&quot;&apos; and 2 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@Given(&quot;delete bookingid  urlEleven {string}&quot;)
-public void delete_bookingid_url_eleven(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then(&quot;verify responseEleven status code {string}&quot;)
-public void verify_response_eleven_status_code(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then(&quot;verify responseEleven contains header content type&quot;)
-public void verify_response_eleven_contains_header_content_type() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-">
-                <![CDATA[io.cucumber.testng.UndefinedStepException: The step 'delete bookingid  urlEleven "https://restful-booker.herokuapp.com/booking"' and 2 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@Given("delete bookingid  urlEleven {string}")
-public void delete_bookingid_url_eleven(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("verify responseEleven status code {string}")
-public void verify_response_eleven_status_code(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("verify responseEleven contains header content type")
-public void verify_response_eleven_contains_header_content_type() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-                io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:133)io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)java.base/java.lang.reflect.Method.invoke(Method.java:566)org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)java.base/java.util.ArrayList.forEach(ArrayList.java:1541)org.testng.TestRunner.privateRun(TestRunner.java:848)org.testng.TestRunner.run(TestRunner.java:621)org.testng.SuiteRunner.runTest(SuiteRunner.java:443)org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)org.testng.SuiteRunner.run(SuiteRunner.java:336)org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)org.testng.TestNG.runSuitesLocally(TestNG.java:1200)org.testng.TestNG.runSuites(TestNG.java:1114)org.testng.TestNG.run(TestNG.java:1082)com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+            <failure type="java.lang.AssertionError" message="
+Expected: is &lt;204&gt;
+     but: was &lt;201&gt;">
+                <![CDATA[java.lang.AssertionError: 
+Expected: is <204>
+     but: was <201>
+                org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)org.restfullbooker.task.task_4_positive.RestfullBookerDeleteBookingIdTwo.verify_response_eleven_status_code(RestfullBookerDeleteBookingIdTwo.java:168)✽.verify responseEleven status code "204"(file:///J:/3.%20automation%20testing/day36%20---full%20CUCUMBER%20BDD(framework),%20passingvaluesjustlikeenviromentvariabelinpostman/Assignment%20answer/com.restfullbooker/src/test/resource/featurefiles/RestFullBookerPostivetestCases_04.feature:21)
 ]]>
             </failure>
     </testcase>
@@ -58,7 +26,7 @@ public void verify_response_eleven_contains_header_content_type() {
 
             <testcase
                 name="runScenario"
-                time="1.340"
+                time="1.457"
                 classname="org.restfullbooker.runner.Runner3">
             </testcase>
 </testsuite>

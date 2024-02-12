@@ -18,7 +18,8 @@ public class CucumberReport {
         jsonFiles.add("target/CucumberReports/CucumberReport1.json");
         jsonFiles.add("target/CucumberReports/CucumberReport2.json");
         jsonFiles.add("target/CucumberReports/CucumberReport3.json");
-       // jsonFiles.add("target/CucumberReports/CucumberReport4.json");
+        jsonFiles.add("target/CucumberReports/CucumberReport4.json");
+        jsonFiles.add("target/CucumberReports/CucumberReport5.json");
 
         String buildNumber = "1";
         String projectName = "cucumberProject";

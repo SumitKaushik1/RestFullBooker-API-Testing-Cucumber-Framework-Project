@@ -4,12 +4,12 @@
            failures="1"
            errors="0"
            skipped="0"
-           time="2.696">
+           time="3.833">
     <properties></properties>
 
             <testcase
                 name="runScenario"
-                time="1.381"
+                time="1.658"
                 classname="org.restfullbooker.runner.Runner1">
 
             <failure type="java.lang.AssertionError" message="
@@ -26,7 +26,7 @@ Expected: is <204>
 
             <testcase
                 name="runScenario"
-                time="1.315"
+                time="2.175"
                 classname="org.restfullbooker.runner.Runner1">
             </testcase>
 </testsuite>
