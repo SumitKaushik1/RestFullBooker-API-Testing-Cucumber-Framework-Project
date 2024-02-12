@@ -1,17 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+        <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
     <test verbose="2" preserve-order="true"
-          name="J:/3. automation testing/day36 ---full CUCUMBER BDD(framework), passingvaluesjustlikeenviromentvariabelinpostman/Assignment answer/com.restfullbooker/src/test/java">
-
-            <classes>
-                <class name="org.restfullbooker.runner.Runner"/>
-                <class name="org.restfullbooker.runner.Runner1"/>
-                <class name="org.restfullbooker.runner.Runner2"/>
-                <class name="org.restfullbooker.runner.Runner3"/>
-            </classes>
-
-
-
+          name="J:\3. automation testing\day36 ---full CUCUMBER BDD(framework), passingvaluesjustlikeenviromentvariabelinpostman\Assignment answer\com.restfullbooker">
+        <classes>
+            <class name="org.restfullbooker.runner.Runner"/>
+            <class name="org.restfullbooker.runner.Runner1"/>
+            <class name="org.restfullbooker.runner.Runner2"/>
+            <class name="org.restfullbooker.runner.Runner3"/>
+            <class name="org.restfullbooker.Report.CucumberReport"/>
+        </classes>
     </test>
 </suite>

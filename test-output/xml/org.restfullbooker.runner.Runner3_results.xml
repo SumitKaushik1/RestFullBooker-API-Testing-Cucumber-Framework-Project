@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="J:/3. automation testing/day36 ---full CUCUMBER BDD(framework), passingvaluesjustlikeenviromentvariabelinpostman/Assignment answer/com.restfullbooker/src/test/java"
+<testsuite name="J:\3. automation testing\day36 ---full CUCUMBER BDD(framework), passingvaluesjustlikeenviromentvariabelinpostman\Assignment answer\com.restfullbooker"
            tests="2"
            failures="1"
            errors="0"
            skipped="0"
-           time="1.476">
+           time="1.420">
     <properties></properties>
 
             <testcase
                 name="runScenario"
-                time="0.176"
+                time="0.080"
                 classname="org.restfullbooker.runner.Runner3">
 
             <failure type="io.cucumber.testng.UndefinedStepException" message="The step &apos;delete bookingid  urlEleven &quot;https://restful-booker.herokuapp.com/booking&quot;&apos; and 2 other step(s) are undefined.
@@ -58,7 +58,7 @@ public void verify_response_eleven_contains_header_content_type() {
 
             <testcase
                 name="runScenario"
-                time="1.300"
+                time="1.340"
                 classname="org.restfullbooker.runner.Runner3">
             </testcase>
 </testsuite>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="J:\3. automation testing\day36 ---full CUCUMBER BDD(framework), passingvaluesjustlikeenviromentvariabelinpostman\Assignment answer\com.restfullbooker"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="2.557">
+    <properties></properties>
+
+
+
+            <testcase
+                name="cucumberReport"
+                time="2.557"
+                classname="org.restfullbooker.Report.CucumberReport">
+            </testcase>
+</testsuite>

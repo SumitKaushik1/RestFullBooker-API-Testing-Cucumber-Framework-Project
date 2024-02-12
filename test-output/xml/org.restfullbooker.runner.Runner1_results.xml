@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="J:/3. automation testing/day36 ---full CUCUMBER BDD(framework), passingvaluesjustlikeenviromentvariabelinpostman/Assignment answer/com.restfullbooker/src/test/java"
+<testsuite name="J:\3. automation testing\day36 ---full CUCUMBER BDD(framework), passingvaluesjustlikeenviromentvariabelinpostman\Assignment answer\com.restfullbooker"
            tests="2"
            failures="1"
            errors="0"
            skipped="0"
-           time="2.432">
+           time="2.696">
     <properties></properties>
 
             <testcase
                 name="runScenario"
-                time="1.192"
+                time="1.381"
                 classname="org.restfullbooker.runner.Runner1">
 
             <failure type="java.lang.AssertionError" message="
@@ -18,7 +18,7 @@ Expected: is &lt;204&gt;
                 <![CDATA[java.lang.AssertionError: 
 Expected: is <204>
      but: was <201>
-                org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)org.restfullbooker.task.task_2_positive.RestfullBookerRequestDeleteUserOne.verify_response_five_status_code(RestfullBookerRequestDeleteUserOne.java:185)✽.verify responseFive status code "204"(file:///J:/3.%20automation%20testing/day36%20---full%20CUCUMBER%20BDD(framework),%20passingvaluesjustlikeenviromentvariabelinpostman/Assignment%20answer/com.restfullbooker/src/test/resource/featurefiles/RestfullBookerPositive1testCase.feature:7)
+                org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)org.restfullbooker.task.task_2_positive.RestfullBookerRequestDeleteUserOne.verify_response_five_status_code(RestfullBookerRequestDeleteUserOne.java:185)✽.verify responseFive status code "204"(file:///J:/3.%20automation%20testing/day36%20---full%20CUCUMBER%20BDD(framework),%20passingvaluesjustlikeenviromentvariabelinpostman/Assignment%20answer/com.restfullbooker/src/test/resource/featurefiles/RestfullBookerPositivetestCase_02.feature:7)
 ]]>
             </failure>
     </testcase>
@@ -26,7 +26,7 @@ Expected: is <204>
 
             <testcase
                 name="runScenario"
-                time="1.240"
+                time="1.315"
                 classname="org.restfullbooker.runner.Runner1">
             </testcase>
 </testsuite>

@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="J:/3. automation testing/day36 ---full CUCUMBER BDD(framework), passingvaluesjustlikeenviromentvariabelinpostman/Assignment answer/com.restfullbooker/src/test/java"
+<testsuite name="J:\3. automation testing\day36 ---full CUCUMBER BDD(framework), passingvaluesjustlikeenviromentvariabelinpostman\Assignment answer\com.restfullbooker"
            tests="3"
            failures="0"
            errors="0"
            skipped="0"
-           time="4.442">
+           time="5.311">
     <properties></properties>
 
 
 
             <testcase
                 name="runScenario"
-                time="1.779"
+                time="1.485"
                 classname="org.restfullbooker.runner.Runner2">
             </testcase>
             <testcase
                 name="runScenario"
-                time="1.342"
+                time="2.465"
                 classname="org.restfullbooker.runner.Runner2">
             </testcase>
             <testcase
                 name="runScenario"
-                time="1.321"
+                time="1.361"
                 classname="org.restfullbooker.runner.Runner2">
             </testcase>
 </testsuite>
