@@ -4,29 +4,29 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="16.239">
+           time="20.488">
     <properties></properties>
 
 
 
             <testcase
                 name="runScenario"
-                time="9.410"
+                time="1.318"
                 classname="org.restfullbooker.runner.Runner">
             </testcase>
             <testcase
                 name="runScenario"
-                time="1.627"
+                time="16.130"
                 classname="org.restfullbooker.runner.Runner">
             </testcase>
             <testcase
                 name="runScenario"
-                time="3.146"
+                time="1.533"
                 classname="org.restfullbooker.runner.Runner">
             </testcase>
             <testcase
                 name="runScenario"
-                time="2.056"
+                time="1.507"
                 classname="org.restfullbooker.runner.Runner">
             </testcase>
 </testsuite>

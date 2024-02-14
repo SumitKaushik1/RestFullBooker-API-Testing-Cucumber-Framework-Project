@@ -4,14 +4,14 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="2.271">
+           time="8.486">
     <properties></properties>
 
 
 
             <testcase
                 name="cucumberReport"
-                time="2.271"
+                time="8.486"
                 classname="org.restfullbooker.Report.CucumberReport">
             </testcase>
 </testsuite>
