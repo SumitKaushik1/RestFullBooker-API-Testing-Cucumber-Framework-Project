@@ -26,4 +26,22 @@
 - Cucumber HTML
 - JUnit (different version)
 - JUnit Jupiter
-Cucumber Reporting
+- Cucumber Reporting
+  
+
+
+## Task 1: Test Cases
+- Create Token
+- Create Booking
+- Update Booking
+- Get Booking
+
+
+## Task 2 : Test Cases
+- Delete User
+- Get Deleted User
+
+## Task 3 : Test Cases
+- Get All Booking
+- Update Booking
+- Get Booking Id
