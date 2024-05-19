@@ -53,4 +53,10 @@
 ## Task 5 : Negative Test Cases
 - Create Token
 - Send Wrong Payload
+
+## Task 6 : Negative Test Cases
+- Get All Booking
+- Delete Booking
+- Update Delete Booking
+- Send Wrong Payload 
   
