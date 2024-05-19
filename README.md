@@ -62,8 +62,8 @@
 
 ______________________________________________________________________________________________
 
-## test-output
- ### html 
- - **Cucumber HTML Report :**
-      - This folder contains the Cucumber HTML report generated from the API testing of the RestfulBooker project. The report provides a detailed overview of the test execution results, including the status of each test case, execution times, and any encountered issues or errors.
+# test-output
+ ## html 
+
+ This folder contains the Cucumber HTML report generated from the API testing of the RestfulBooker project. The report provides a detailed overview of the test execution results, including the status of each test case, execution times, and any encountered issues or errors.
   
