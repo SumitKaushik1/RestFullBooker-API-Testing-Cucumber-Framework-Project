@@ -37,11 +37,20 @@
 - Get Booking
 
 
-## Task 2 : Test Cases
+## Task 2 : Positive Test Cases
 - Delete User
 - Get Deleted User
 
-## Task 3 : Test Cases
+## Task 3 : Positive Test Cases
 - Get All Booking
 - Update Booking
 - Get Booking Id
+
+## Task 4 : Positive Test Cases
+- Create Booking
+- Delete Booking
+  
+## Task 5 : Negative Test Cases
+- Create Token
+- Send Wrong Payload
+  
