@@ -1,0 +1,701 @@
+{
+  "42c12bc882ba07c3137d4f9621b04353" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "2c9bfb1f16908a51",
+      "status" : "passed",
+      "time" : {
+        "start" : 1707548095386,
+        "stop" : 1707548099567,
+        "duration" : 4181
+      }
+    } ]
+  },
+  "acb231e8916281fabc78c562df40c864" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b5ecd934b9311522",
+      "status" : "passed",
+      "time" : {
+        "start" : 1707880811897,
+        "stop" : 1707880813133,
+        "duration" : 1236
+      }
+    } ]
+  },
+  "a8f902d757794890159ea6fbcc1aa62" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "bb9eb2f49c12f1a1",
+      "status" : "broken",
+      "statusDetails" : "java.lang.NullPointerException",
+      "time" : {
+        "start" : 1705957592237,
+        "stop" : 1705957592244,
+        "duration" : 7
+      }
+    } ]
+  },
+  "7d214bce5feb431a3b0fd0cf191de295" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "d1831c9ad121cd55",
+      "status" : "passed",
+      "time" : {
+        "start" : 1707880804257,
+        "stop" : 1707880805629,
+        "duration" : 1372
+      }
+    } ]
+  },
+  "6e93b5ac1182c5f7fde70e66200936a3" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "141c192a8a671a16",
+      "status" : "passed",
+      "time" : {
+        "start" : 1707880801441,
+        "stop" : 1707880802765,
+        "duration" : 1324
+      }
+    } ]
+  },
+  "a66759481aafe47b905fcc2d3d65d17" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "cf1f9744932e14e",
+      "status" : "broken",
+      "statusDetails" : "TODO: implement me",
+      "time" : {
+        "start" : 1707880808332,
+        "stop" : 1707880809512,
+        "duration" : 1180
+      }
+    } ]
+  },
+  "fa22f3dc0ccc932c2dd19487b201421" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "6e175ea7a3dc32c8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1707880802776,
+        "stop" : 1707880804034,
+        "duration" : 1258
+      }
+    } ]
+  },
+  "b4fadb23231e66a9e82936b0a8b301c7" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "439ce61f8fa705fb",
+      "status" : "broken",
+      "statusDetails" : "java.lang.NullPointerException",
+      "time" : {
+        "start" : 1705957592165,
+        "stop" : 1705957592189,
+        "duration" : 24
+      }
+    } ]
+  },
+  "7fdf1f4c35c7f47447a1a105c8a81fdc" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "624073f9c400d6a0",
+      "status" : "failed",
+      "statusDetails" : "\nExpected: is <204>\n     but: was <201>",
+      "time" : {
+        "start" : 1707880796170,
+        "stop" : 1707880797448,
+        "duration" : 1278
+      }
+    } ]
+  },
+  "1620d6f2f716925bbb3568e11e53ca03" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "547e91d45e68e364",
+      "status" : "broken",
+      "statusDetails" : "The step 'Get payload from urlNine \"https://restful-booker.herokuapp.com/booking\"' and 4 other step(s) are undefined.\nYou can implement these steps using the snippet(s) below:\n\n@Given(\"Get payload from urlNine {string}\")\npublic void get_payload_from_url_nine(String string) {\n    // Write code here that turns the phrase above into concrete actions\n    throw new io.cucumber.java.PendingException();\n}\n@Then(\"verify responseNine status code \\\"{int}\")\npublic void verify_response_nine_status_code(Integer int1) {\n    // Write code here that turns the phrase above into concrete actions\n    throw new io.cucumber.java.PendingException();\n}\n@Then(\"verify responseNine contains header content type\")\npublic void verify_response_nine_contains_header_content_type() {\n    // Write code here that turns the phrase above into concrete actions\n    throw new io.cucumber.java.PendingException();\n}\n@Then(\"verify responseNine contains firstname\")\npublic void verify_response_nine_contains_firstname() {\n    // Write code here that turns the phrase above into concrete actions\n    throw new io.cucumber.java.PendingException();\n}\n@Then(\"verify responseNine Json Schema\")\npublic void verify_response_nine_json_schema() {\n    // Write code here that turns the phrase above into concrete actions\n    throw new io.cucumber.java.PendingException();\n}\n",
+      "time" : {
+        "start" : 1707523369165,
+        "stop" : 1707523369202,
+        "duration" : 37
+      }
+    } ]
+  },
+  "6d2de5eb52f3355b0b832048c7813929" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "f19673d1d3752e0d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1707880813287,
+        "stop" : 1707880821772,
+        "duration" : 8485
+      }
+    } ]
+  },
+  "c971c906415f4b5c7dfde3288af98531" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "3111e91ed7a48c35",
+      "status" : "broken",
+      "statusDetails" : "The step 'Get payload from urlEight \"https://restful-booker.herokuapp.com/booking\"' and 4 other step(s) are undefined.\nYou can implement these steps using the snippet(s) below:\n\n@Given(\"Get payload from urlEight {string}\")\npublic void get_payload_from_url_eight(String string) {\n    // Write code here that turns the phrase above into concrete actions\n    throw new io.cucumber.java.PendingException();\n}\n@Then(\"verify responseEight status code \\\"{int}\")\npublic void verify_response_eight_status_code(Integer int1) {\n    // Write code here that turns the phrase above into concrete actions\n    throw new io.cucumber.java.PendingException();\n}\n@Then(\"verify responseEight contains header content type\")\npublic void verify_response_eight_contains_header_content_type() {\n    // Write code here that turns the phrase above into concrete actions\n    throw new io.cucumber.java.PendingException();\n}\n@Then(\"verify responseEight contains firstname\")\npublic void verify_response_eight_contains_firstname() {\n    // Write code here that turns the phrase above into concrete actions\n    throw new io.cucumber.java.PendingException();\n}\n@Then(\"verify responseEight Json Schema\")\npublic void verify_response_eight_json_schema() {\n    // Write code here that turns the phrase above into concrete actions\n    throw new io.cucumber.java.PendingException();\n}\n",
+      "time" : {
+        "start" : 1707523369094,
+        "stop" : 1707523369133,
+        "duration" : 39
+      }
+    } ]
+  },
+  "488c56f45e837eb2e2fe1e5dde00583b" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "9fe82540b52cf742",
+      "status" : "passed",
+      "time" : {
+        "start" : 1707880791215,
+        "stop" : 1707880792743,
+        "duration" : 1528
+      }
+    } ]
+  },
+  "4444eae82618ae058868a0094975e838" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "83de98cf09204f63",
+      "status" : "passed",
+      "time" : {
+        "start" : 1707880809697,
+        "stop" : 1707880811881,
+        "duration" : 2184
+      }
+    } ]
+  },
+  "b16fa297886f2a08b0d961339c8ca689" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "897085265ef4a7eb",
+      "status" : "failed",
+      "statusDetails" : "\r\nExpected: is <204>\r\n     but: was <405>",
+      "time" : {
+        "start" : 1707447190985,
+        "stop" : 1707447197078,
+        "duration" : 6093
+      }
+    } ]
+  },
+  "b8aefd8112da042bacf965cc87f064ed" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "619944134841fde6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1707447207712,
+        "stop" : 1707447210113,
+        "duration" : 2401
+      }
+    } ]
+  },
+  "5e7e0e79abe5f8a97b8457826d01abf7" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "c2a683d2186280ef",
+      "status" : "passed",
+      "time" : {
+        "start" : 1707727857861,
+        "stop" : 1707727859079,
+        "duration" : 1218
+      }
+    } ]
+  },
+  "6338a5eb5d15d3b767bbfb983551fdf" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "60d361ff4dde11be",
+      "status" : "failed",
+      "statusDetails" : "\nExpected: is <204>\n     but: was <201>",
+      "time" : {
+        "start" : 1707880805662,
+        "stop" : 1707880806873,
+        "duration" : 1211
+      }
+    } ]
+  },
+  "a5eff1e4676b7ad53e862e523774f459" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "f9a50df85ffc48b4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1707880807059,
+        "stop" : 1707880808322,
+        "duration" : 1263
+      }
+    } ]
+  },
+  "336ef455f9dac64a40df3c63fbded1e8" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "8cdb0403cb0b81ad",
+      "status" : "passed",
+      "time" : {
+        "start" : 1707880794269,
+        "stop" : 1707880795585,
+        "duration" : 1316
+      }
+    } ]
+  },
+  "98c8c54f4f731f5651112c0bd219e4cc" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "cfb9d591ee2cc343",
+      "status" : "passed",
+      "time" : {
+        "start" : 1707880792756,
+        "stop" : 1707880794259,
+        "duration" : 1503
+      }
+    } ]
+  },
+  "73e9d88a44a106e07e4a1217d349c207" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "dc7be662ac975c3e",
+      "status" : "broken",
+      "statusDetails" : "java.lang.NullPointerException",
+      "time" : {
+        "start" : 1705957591481,
+        "stop" : 1705957592103,
+        "duration" : 622
+      }
+    } ]
+  },
+  "3d9163135ecfddfb616e1cb08721dd6b" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "44707f7fe37ec43",
+      "status" : "passed",
+      "time" : {
+        "start" : 1707880775609,
+        "stop" : 1707880791065,
+        "duration" : 15456
+      }
+    } ]
+  },
+  "cfc9c6cd1d4af95409ca88d40cf17b87" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "78febc4aa71b18a4",
+      "status" : "broken",
+      "statusDetails" : "java.lang.NullPointerException",
+      "time" : {
+        "start" : 1705957592130,
+        "stop" : 1705957592134,
+        "duration" : 4
+      }
+    } ]
+  },
+  "690c072442d6a3d77ad9f569ccd488a8" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "d927749132467347",
+      "status" : "passed",
+      "time" : {
+        "start" : 1707727855379,
+        "stop" : 1707727857842,
+        "duration" : 2463
+      }
+    } ]
+  },
+  "f1f0ec8485a325f66f1bf1ae81433d95" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "81d3cb41371b7d56",
+      "status" : "passed",
+      "time" : {
+        "start" : 1707447198761,
+        "stop" : 1707447205512,
+        "duration" : 6751
+      }
+    } ]
+  },
+  "fb0a42bec1a26f5527cd18b113de9599" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "ad0ec7aab083d99e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1707880798937,
+        "stop" : 1707880801407,
+        "duration" : 2470
+      }
+    } ]
+  },
+  "d376622bb851883103f8943478b913d" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "f83f975d13b104c2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1707547644120,
+        "stop" : 1707547647390,
+        "duration" : 3270
+      }
+    } ]
+  },
+  "9c5bde08b7c6017aad4a222a134d2062" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b8e895043beb94b6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1707447197093,
+        "stop" : 1707447198741,
+        "duration" : 1648
+      }
+    } ]
+  },
+  "ab754ccaddcf033458016dd642853433" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b0538396a69fe812",
+      "status" : "passed",
+      "time" : {
+        "start" : 1707880797486,
+        "stop" : 1707880798689,
+        "duration" : 1203
+      }
+    } ]
+  },
+  "4b93db97cdbaaed17c287c3f00babc52" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "6b626f408afc810b",
+      "status" : "broken",
+      "statusDetails" : "java.lang.NullPointerException",
+      "time" : {
+        "start" : 1705957589355,
+        "stop" : 1705957589604,
+        "duration" : 249
+      }
+    } ]
+  },
+  "a29e76586df3566848fb942011b93e15" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "9beb830ba98b6391",
+      "status" : "broken",
+      "statusDetails" : "path must exist: J:\\3. automation testing\\day36 ---full CUCUMBER BDD(framework), passingvaluesjustlikeenviromentvariabelinpostman\\Assignment answer\\com.restfullbooker\\src\\test\\resource\\featurefiles\\RestfullBookerPositive3testCase.feature",
+      "time" : {
+        "start" : 1707525139288,
+        "stop" : 1707525139290,
+        "duration" : 2
+      }
+    } ]
+  },
+  "a88242e0d546dcb924738aee2f5322a2" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "79c9b8493ea490de",
+      "status" : "broken",
+      "statusDetails" : "The step 'delete bookingid  urlEleven \"https://restful-booker.herokuapp.com/booking\"' and 2 other step(s) are undefined.\nYou can implement these steps using the snippet(s) below:\n\n@Given(\"delete bookingid  urlEleven {string}\")\npublic void delete_bookingid_url_eleven(String string) {\n    // Write code here that turns the phrase above into concrete actions\n    throw new io.cucumber.java.PendingException();\n}\n@Then(\"verify responseEleven status code {string}\")\npublic void verify_response_eleven_status_code(String string) {\n    // Write code here that turns the phrase above into concrete actions\n    throw new io.cucumber.java.PendingException();\n}\n@Then(\"verify responseEleven contains header content type\")\npublic void verify_response_eleven_contains_header_content_type() {\n    // Write code here that turns the phrase above into concrete actions\n    throw new io.cucumber.java.PendingException();\n}\n",
+      "time" : {
+        "start" : 1707447190733,
+        "stop" : 1707447190955,
+        "duration" : 222
+      }
+    } ]
+  },
+  "7f8259320a5fd4866901152a4b9ec607" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "f214a5e101941d9b",
+      "status" : "broken",
+      "statusDetails" : "The step 'Get payload from urlSeven \"https://restful-booker.herokuapp.com/booking\"' and 4 other step(s) are undefined.\nYou can implement these steps using the snippet(s) below:\n\n@Given(\"Get payload from urlSeven {string}\")\npublic void get_payload_from_url_seven(String string) {\n    // Write code here that turns the phrase above into concrete actions\n    throw new io.cucumber.java.PendingException();\n}\n@Then(\"verify responseSeven status code \\\"{int}\")\npublic void verify_response_seven_status_code(Integer int1) {\n    // Write code here that turns the phrase above into concrete actions\n    throw new io.cucumber.java.PendingException();\n}\n@Then(\"verify responseSeven contains header content type\")\npublic void verify_response_seven_contains_header_content_type() {\n    // Write code here that turns the phrase above into concrete actions\n    throw new io.cucumber.java.PendingException();\n}\n@Then(\"verify responseSeven contains bookingid\")\npublic void verify_response_seven_contains_bookingid() {\n    // Write code here that turns the phrase above into concrete actions\n    throw new io.cucumber.java.PendingException();\n}\n@Then(\"verify responseSeven Json Schema\")\npublic void verify_response_seven_json_schema() {\n    // Write code here that turns the phrase above into concrete actions\n    throw new io.cucumber.java.PendingException();\n}\n",
+      "time" : {
+        "start" : 1707523368859,
+        "stop" : 1707523369022,
+        "duration" : 163
+      }
+    } ]
+  },
+  "759a2820dfcc56db2a1328bd11b87cee" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "7a2343ba80610394",
+      "status" : "broken",
+      "statusDetails" : "Cookie name cannot be null",
+      "time" : {
+        "start" : 1707447185984,
+        "stop" : 1707447190440,
+        "duration" : 4456
+      }
+    } ]
+  },
+  "99adf49fb3a571de392b250a9f4315cb" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "6559f6c940e340de",
+      "status" : "passed",
+      "time" : {
+        "start" : 1707447205658,
+        "stop" : 1707447207703,
+        "duration" : 2045
+      }
+    } ]
+  }
+}

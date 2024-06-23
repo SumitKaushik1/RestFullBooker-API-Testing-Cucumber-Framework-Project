@@ -1,0 +1,132 @@
+{
+  "uid" : "f9a50df85ffc48b4",
+  "name" : "Runs Cucumber Scenarios",
+  "fullName" : "io.cucumber.testng.AbstractTestNGCucumberTests.runScenario",
+  "historyId" : "a5eff1e4676b7ad53e862e523774f459",
+  "time" : {
+    "start" : 1707880807059,
+    "stop" : 1707880808322,
+    "duration" : 1263
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setUpClass",
+    "time" : {
+      "start" : 1707880807018,
+      "stop" : 1707880807053,
+      "duration" : 35
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDownClass",
+    "time" : {
+      "start" : 1707880809517,
+      "stop" : 1707880809643,
+      "duration" : 126
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "org.restfullbooker.runner.Runner4"
+  }, {
+    "name" : "testClass",
+    "value" : "org.restfullbooker.runner.Runner4"
+  }, {
+    "name" : "testMethod",
+    "value" : "runScenario"
+  }, {
+    "name" : "parentSuite",
+    "value" : "All Test Suite"
+  }, {
+    "name" : "suite",
+    "value" : "J:\\3. automation testing\\day36 ---full CUCUMBER BDD(framework), passingvaluesjustlikeenviromentvariabelinpostman\\Assignment answer\\com.restfullbooker"
+  }, {
+    "name" : "subSuite",
+    "value" : "org.restfullbooker.runner.Runner4"
+  }, {
+    "name" : "host",
+    "value" : "PRITAM-PC"
+  }, {
+    "name" : "thread",
+    "value" : "11044@PRITAM-PC.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "\"Post request to create token\""
+  }, {
+    "name" : "arg1",
+    "value" : "\"Task_5_Negative\""
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "83028573e678a6b9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1707728052695,
+        "stop" : 1707728053971,
+        "duration" : 1276
+      }
+    }, {
+      "uid" : "9fdd38e4e8460696",
+      "status" : "passed",
+      "time" : {
+        "start" : 1707727852610,
+        "stop" : 1707727853882,
+        "duration" : 1272
+      }
+    }, {
+      "uid" : "62e70390d151eb16",
+      "status" : "passed",
+      "time" : {
+        "start" : 1707726574001,
+        "stop" : 1707726575609,
+        "duration" : 1608
+      }
+    }, {
+      "uid" : "833ebb1eee69766b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1707713893269,
+        "stop" : 1707713894594,
+        "duration" : 1325
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "f9a50df85ffc48b4.json",
+  "parameterValues" : [ "\"Post request to create token\"", "\"Task_5_Negative\"" ]
+}

@@ -1,0 +1,100 @@
+{
+  "uid" : "55d60fc3299a31be",
+  "name" : "Runs Cucumber Scenarios",
+  "fullName" : "io.cucumber.testng.AbstractTestNGCucumberTests.runScenario",
+  "historyId" : "a66759481aafe47b905fcc2d3d65d17",
+  "time" : {
+    "start" : 1707728053981,
+    "stop" : 1707728055205,
+    "duration" : 1224
+  },
+  "status" : "broken",
+  "statusMessage" : "TODO: implement me",
+  "statusTrace" : "io.cucumber.java.PendingException: TODO: implement me\r\n\tat org.restfullbooker.task.task_5_negative.RestFullBookerWrongPayloadTwo.verify_response_thirteen_status_code(RestFullBookerWrongPayloadTwo.java:139)\r\n\tat ✽.verify responseThirteen status code  \"500\"(file:///J:/3.%20automation%20testing/day36%20---full%20CUCUMBER%20BDD(framework),%20passingvaluesjustlikeenviromentvariabelinpostman/Assignment%20answer/com.restfullbooker/src/test/resource/featurefiles/RestFullBookerPostivetestCases_05.feature:18)\r\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setUpClass",
+    "time" : {
+      "start" : 1707728052661,
+      "stop" : 1707728052691,
+      "duration" : 30
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDownClass",
+    "time" : {
+      "start" : 1707728055218,
+      "stop" : 1707728055331,
+      "duration" : 113
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "org.restfullbooker.runner.Runner4"
+  }, {
+    "name" : "testClass",
+    "value" : "org.restfullbooker.runner.Runner4"
+  }, {
+    "name" : "testMethod",
+    "value" : "runScenario"
+  }, {
+    "name" : "parentSuite",
+    "value" : "All Test Suite"
+  }, {
+    "name" : "suite",
+    "value" : "J:\\3. automation testing\\day36 ---full CUCUMBER BDD(framework), passingvaluesjustlikeenviromentvariabelinpostman\\Assignment answer\\com.restfullbooker"
+  }, {
+    "name" : "subSuite",
+    "value" : "org.restfullbooker.runner.Runner4"
+  }, {
+    "name" : "host",
+    "value" : "PRITAM-PC"
+  }, {
+    "name" : "thread",
+    "value" : "7592@PRITAM-PC.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "\"Post request with wrong text payload\""
+  }, {
+    "name" : "arg1",
+    "value" : "\"Task_5_Negative\""
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "55d60fc3299a31be.json",
+  "parameterValues" : [ "\"Post request with wrong text payload\"", "\"Task_5_Negative\"" ]
+}
