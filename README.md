@@ -1,5 +1,5 @@
 # RestFullBooker-API-Testing-Cucumber-Framework-Project
-## Browser-Link-Cucumber-Report
+## Browser-Link-Cucumber-Report-RestFullbooker
 https://sumitkaushik1.github.io/Cucumber-Report-RestfulBooker/
 
 ### List of Dependencies
