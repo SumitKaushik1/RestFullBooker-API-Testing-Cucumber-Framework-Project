@@ -1,4 +1,4 @@
-# RestFullBookerCucumberFramework-Automation-Testing-Assignment
+# RestFullBooker-API-Testing-Cucumber-Framework-Project
 
 
 ### List of Dependencies
