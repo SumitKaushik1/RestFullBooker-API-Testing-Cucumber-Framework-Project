@@ -1,0 +1,100 @@
+{
+  "uid" : "e3c2f3f148e446da",
+  "name" : "Runs Cucumber Scenarios",
+  "fullName" : "io.cucumber.testng.AbstractTestNGCucumberTests.runScenario",
+  "historyId" : "759a2820dfcc56db2a1328bd11b87cee",
+  "time" : {
+    "start" : 1707446743172,
+    "stop" : 1707446746080,
+    "duration" : 2908
+  },
+  "status" : "broken",
+  "statusMessage" : "Cookie name cannot be null",
+  "statusTrace" : "java.lang.IllegalArgumentException: Cookie name cannot be null\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:60)\r\n\tat org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:86)\r\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)\r\n\tat io.restassured.internal.common.assertion.AssertParameter.notNull(AssertParameter.groovy:26)\r\n\tat io.restassured.internal.common.assertion.AssertParameter$notNull.callStatic(Unknown Source)\r\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallStatic(CallSiteArray.java:53)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:217)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:240)\r\n\tat io.restassured.internal.RequestSpecificationImpl.cookie(RequestSpecificationImpl.groovy:921)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\r\n\tat org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)\r\n\tat groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)\r\n\tat groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1334)\r\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1089)\r\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1008)\r\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:791)\r\n\tat io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:46)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:57)\r\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:194)\r\n\tat io.restassured.internal.RequestSpecificationImpl.cookie(RequestSpecificationImpl.groovy:936)\r\n\tat org.restfullbooker.task.task_4_positive.RestFullBookerCreateBookingOne.get_payload_from_url_ten(RestFullBookerCreateBookingOne.java:149)\r\n\tat ✽.Get payload from urlTen \"https://restful-booker.herokuapp.com/booking\"(file:///J:/3.%20automation%20testing/day36%20---full%20CUCUMBER%20BDD(framework),%20passingvaluesjustlikeenviromentvariabelinpostman/Assignment%20answer/com.restfullbooker/src/test/resource/featurefiles/RestFullBookerPostive3testCases.feature:5)\r\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setUpClass",
+    "time" : {
+      "start" : 1707446741093,
+      "stop" : 1707446742947,
+      "duration" : 1854
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDownClass",
+    "time" : {
+      "start" : 1707446766792,
+      "stop" : 1707446767093,
+      "duration" : 301
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "org.restfullbooker.runner.Runner"
+  }, {
+    "name" : "testClass",
+    "value" : "org.restfullbooker.runner.Runner"
+  }, {
+    "name" : "testMethod",
+    "value" : "runScenario"
+  }, {
+    "name" : "parentSuite",
+    "value" : "All Test Suite"
+  }, {
+    "name" : "suite",
+    "value" : "J:/3. automation testing/day36 ---full CUCUMBER BDD(framework), passingvaluesjustlikeenviromentvariabelinpostman/Assignment answer/com.restfullbooker/src/test/java"
+  }, {
+    "name" : "subSuite",
+    "value" : "org.restfullbooker.runner.Runner"
+  }, {
+    "name" : "host",
+    "value" : "PRITAM-PC"
+  }, {
+    "name" : "thread",
+    "value" : "14864@PRITAM-PC.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "\"Post request to create booking\""
+  }, {
+    "name" : "arg1",
+    "value" : "\"Task_4_positive\""
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "e3c2f3f148e446da.json",
+  "parameterValues" : [ "\"Post request to create booking\"", "\"Task_4_positive\"" ]
+}

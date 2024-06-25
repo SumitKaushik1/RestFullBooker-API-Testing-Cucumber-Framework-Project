@@ -1,0 +1,62 @@
+{
+  "uid" : "f83f975d13b104c2",
+  "name" : "tearDown",
+  "fullName" : "org.restfullbooker.runner.Hookers.tearDown",
+  "historyId" : "d376622bb851883103f8943478b913d",
+  "time" : {
+    "start" : 1707547644120,
+    "stop" : 1707547647390,
+    "duration" : 3270
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "org.restfullbooker.runner.Hookers"
+  }, {
+    "name" : "testClass",
+    "value" : "org.restfullbooker.runner.Hookers"
+  }, {
+    "name" : "testMethod",
+    "value" : "tearDown"
+  }, {
+    "name" : "parentSuite",
+    "value" : "All Test Suite"
+  }, {
+    "name" : "suite",
+    "value" : "J:/3. automation testing/day36 ---full CUCUMBER BDD(framework), passingvaluesjustlikeenviromentvariabelinpostman/Assignment answer/com.restfullbooker/src/test/java"
+  }, {
+    "name" : "subSuite",
+    "value" : "org.restfullbooker.runner.Hookers"
+  }, {
+    "name" : "host",
+    "value" : "PRITAM-PC"
+  }, {
+    "name" : "thread",
+    "value" : "15328@PRITAM-PC.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "f83f975d13b104c2.json",
+  "parameterValues" : [ ]
+}

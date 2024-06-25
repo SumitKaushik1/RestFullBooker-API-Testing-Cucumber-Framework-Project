@@ -1,0 +1,100 @@
+{
+  "uid" : "c39d431923ef2dcd",
+  "name" : "Runs Cucumber Scenarios",
+  "fullName" : "io.cucumber.testng.AbstractTestNGCucumberTests.runScenario",
+  "historyId" : "7fdf1f4c35c7f47447a1a105c8a81fdc",
+  "time" : {
+    "start" : 1707523628684,
+    "stop" : 1707523629906,
+    "duration" : 1222
+  },
+  "status" : "failed",
+  "statusMessage" : "\r\nExpected: is <204>\r\n     but: was <201>",
+  "statusTrace" : "java.lang.AssertionError: \r\nExpected: is <204>\r\n     but: was <201>\r\n\tat org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)\r\n\tat org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)\r\n\tat org.restfullbooker.task.task_2_positive.RestfullBookerRequestDeleteUserOne.verify_response_five_status_code(RestfullBookerRequestDeleteUserOne.java:185)\r\n\tat ✽.verify responseFive status code \"204\"(file:///J:/3.%20automation%20testing/day36%20---full%20CUCUMBER%20BDD(framework),%20passingvaluesjustlikeenviromentvariabelinpostman/Assignment%20answer/com.restfullbooker/src/test/resource/featurefiles/RestfullBookerPositive1testCase.feature:7)\r\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setUpClass",
+    "time" : {
+      "start" : 1707523628641,
+      "stop" : 1707523628675,
+      "duration" : 34
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDownClass",
+    "time" : {
+      "start" : 1707523631276,
+      "stop" : 1707523631358,
+      "duration" : 82
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "org.restfullbooker.runner.Runner1"
+  }, {
+    "name" : "testClass",
+    "value" : "org.restfullbooker.runner.Runner1"
+  }, {
+    "name" : "testMethod",
+    "value" : "runScenario"
+  }, {
+    "name" : "parentSuite",
+    "value" : "All Test Suite"
+  }, {
+    "name" : "suite",
+    "value" : "J:/3. automation testing/day36 ---full CUCUMBER BDD(framework), passingvaluesjustlikeenviromentvariabelinpostman/Assignment answer/com.restfullbooker/src/test/java"
+  }, {
+    "name" : "subSuite",
+    "value" : "org.restfullbooker.runner.Runner1"
+  }, {
+    "name" : "host",
+    "value" : "PRITAM-PC"
+  }, {
+    "name" : "thread",
+    "value" : "12052@PRITAM-PC.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "\"Delete request\""
+  }, {
+    "name" : "arg1",
+    "value" : "\"Task_2_positive\""
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c39d431923ef2dcd.json",
+  "parameterValues" : [ "\"Delete request\"", "\"Task_2_positive\"" ]
+}

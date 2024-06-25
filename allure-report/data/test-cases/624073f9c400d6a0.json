@@ -1,0 +1,295 @@
+{
+  "uid" : "624073f9c400d6a0",
+  "name" : "Runs Cucumber Scenarios",
+  "fullName" : "io.cucumber.testng.AbstractTestNGCucumberTests.runScenario",
+  "historyId" : "7fdf1f4c35c7f47447a1a105c8a81fdc",
+  "time" : {
+    "start" : 1707880796170,
+    "stop" : 1707880797448,
+    "duration" : 1278
+  },
+  "status" : "failed",
+  "statusMessage" : "\nExpected: is <204>\n     but: was <201>",
+  "statusTrace" : "java.lang.AssertionError: \nExpected: is <204>\n     but: was <201>\r\n\tat org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)\r\n\tat org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:8)\r\n\tat org.restfullbooker.task.task_2_positive.RestfullBookerRequestDeleteUserOne.verify_response_five_status_code(RestfullBookerRequestDeleteUserOne.java:185)\r\n\tat ✽.verify responseFive status code \"204\"(file:///J:/3.%20automation%20testing/day36%20---full%20CUCUMBER%20BDD(framework),%20passingvaluesjustlikeenviromentvariabelinpostman/Assignment%20answer/com.restfullbooker/src/test/resource/featurefiles/RestfullBookerPositivetestCase_02.feature:7)\r\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setUpClass",
+    "time" : {
+      "start" : 1707880796119,
+      "stop" : 1707880796166,
+      "duration" : 47
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDownClass",
+    "time" : {
+      "start" : 1707880798706,
+      "stop" : 1707880798892,
+      "duration" : 186
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "org.restfullbooker.runner.Runner1"
+  }, {
+    "name" : "testClass",
+    "value" : "org.restfullbooker.runner.Runner1"
+  }, {
+    "name" : "testMethod",
+    "value" : "runScenario"
+  }, {
+    "name" : "parentSuite",
+    "value" : "All Test Suite"
+  }, {
+    "name" : "suite",
+    "value" : "J:\\3. automation testing\\day36 ---full CUCUMBER BDD(framework), passingvaluesjustlikeenviromentvariabelinpostman\\Assignment answer\\com.restfullbooker"
+  }, {
+    "name" : "subSuite",
+    "value" : "org.restfullbooker.runner.Runner1"
+  }, {
+    "name" : "host",
+    "value" : "PRITAM-PC"
+  }, {
+    "name" : "thread",
+    "value" : "11044@PRITAM-PC.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "\"Delete request\""
+  }, {
+    "name" : "arg1",
+    "value" : "\"Task_2_positive\""
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "c545d1b623df8623",
+      "status" : "failed",
+      "statusDetails" : "\r\nExpected: is <204>\r\n     but: was <201>",
+      "time" : {
+        "start" : 1707728039242,
+        "stop" : 1707728040897,
+        "duration" : 1655
+      }
+    }, {
+      "uid" : "f91e66754c613fb6",
+      "status" : "failed",
+      "statusDetails" : "\r\nExpected: is <204>\r\n     but: was <201>",
+      "time" : {
+        "start" : 1707727838616,
+        "stop" : 1707727839962,
+        "duration" : 1346
+      }
+    }, {
+      "uid" : "5230f97219bd3f1d",
+      "status" : "failed",
+      "statusDetails" : "\r\nExpected: is <204>\r\n     but: was <201>",
+      "time" : {
+        "start" : 1707726561080,
+        "stop" : 1707726562673,
+        "duration" : 1593
+      }
+    }, {
+      "uid" : "29c2cb7fc2a9817e",
+      "status" : "failed",
+      "statusDetails" : "\r\nExpected: is <204>\r\n     but: was <201>",
+      "time" : {
+        "start" : 1707713881003,
+        "stop" : 1707713882239,
+        "duration" : 1236
+      }
+    }, {
+      "uid" : "8f5574a9b0dbf982",
+      "status" : "failed",
+      "statusDetails" : "\r\nExpected: is <204>\r\n     but: was <201>",
+      "time" : {
+        "start" : 1707711975492,
+        "stop" : 1707711976843,
+        "duration" : 1351
+      }
+    }, {
+      "uid" : "ba1318daceb71739",
+      "status" : "failed",
+      "statusDetails" : "\r\nExpected: is <204>\r\n     but: was <201>",
+      "time" : {
+        "start" : 1707711339727,
+        "stop" : 1707711341075,
+        "duration" : 1348
+      }
+    }, {
+      "uid" : "be2a3384777350be",
+      "status" : "failed",
+      "statusDetails" : "\r\nExpected: is <204>\r\n     but: was <201>",
+      "time" : {
+        "start" : 1707697636441,
+        "stop" : 1707697637820,
+        "duration" : 1379
+      }
+    }, {
+      "uid" : "29386ad879b94c44",
+      "status" : "failed",
+      "statusDetails" : "\r\nExpected: is <204>\r\n     but: was <201>",
+      "time" : {
+        "start" : 1707697570252,
+        "stop" : 1707697571716,
+        "duration" : 1464
+      }
+    }, {
+      "uid" : "cd736e3b878228fe",
+      "status" : "failed",
+      "statusDetails" : "\r\nExpected: is <204>\r\n     but: was <201>",
+      "time" : {
+        "start" : 1707695422394,
+        "stop" : 1707695424034,
+        "duration" : 1640
+      }
+    }, {
+      "uid" : "87b8a2b69959da62",
+      "status" : "failed",
+      "statusDetails" : "\r\nExpected: is <204>\r\n     but: was <201>",
+      "time" : {
+        "start" : 1707548084589,
+        "stop" : 1707548086018,
+        "duration" : 1429
+      }
+    }, {
+      "uid" : "cd4da3a18314e054",
+      "status" : "failed",
+      "statusDetails" : "\r\nExpected: is <204>\r\n     but: was <201>",
+      "time" : {
+        "start" : 1707547634091,
+        "stop" : 1707547635336,
+        "duration" : 1245
+      }
+    }, {
+      "uid" : "dcd8298715193ed4",
+      "status" : "failed",
+      "statusDetails" : "\r\nExpected: is <204>\r\n     but: was <201>",
+      "time" : {
+        "start" : 1707547435484,
+        "stop" : 1707547436790,
+        "duration" : 1306
+      }
+    }, {
+      "uid" : "411e3ffefc88db77",
+      "status" : "failed",
+      "statusDetails" : "\r\nExpected: is <204>\r\n     but: was <201>",
+      "time" : {
+        "start" : 1707547208233,
+        "stop" : 1707547210116,
+        "duration" : 1883
+      }
+    }, {
+      "uid" : "3bf1518a004f3bcb",
+      "status" : "failed",
+      "statusDetails" : "\r\nExpected: is <204>\r\n     but: was <201>",
+      "time" : {
+        "start" : 1707526389403,
+        "stop" : 1707526390588,
+        "duration" : 1185
+      }
+    }, {
+      "uid" : "391b83da8088db3c",
+      "status" : "failed",
+      "statusDetails" : "\r\nExpected: is <204>\r\n     but: was <201>",
+      "time" : {
+        "start" : 1707526288059,
+        "stop" : 1707526289324,
+        "duration" : 1265
+      }
+    }, {
+      "uid" : "89272dba516e8559",
+      "status" : "failed",
+      "statusDetails" : "\r\nExpected: is <204>\r\n     but: was <201>",
+      "time" : {
+        "start" : 1707525132499,
+        "stop" : 1707525133741,
+        "duration" : 1242
+      }
+    }, {
+      "uid" : "ce63e21c33879ac5",
+      "status" : "failed",
+      "statusDetails" : "\r\nExpected: is <204>\r\n     but: was <201>",
+      "time" : {
+        "start" : 1707524438790,
+        "stop" : 1707524440075,
+        "duration" : 1285
+      }
+    }, {
+      "uid" : "ebb90a440fb5b0c7",
+      "status" : "failed",
+      "statusDetails" : "\r\nExpected: is <204>\r\n     but: was <201>",
+      "time" : {
+        "start" : 1707524269987,
+        "stop" : 1707524271472,
+        "duration" : 1485
+      }
+    }, {
+      "uid" : "98313f152761cd17",
+      "status" : "failed",
+      "statusDetails" : "\r\nExpected: is <204>\r\n     but: was <201>",
+      "time" : {
+        "start" : 1707524078518,
+        "stop" : 1707524079946,
+        "duration" : 1428
+      }
+    }, {
+      "uid" : "bc2b9bde1fbb7b31",
+      "status" : "failed",
+      "statusDetails" : "\r\nExpected: is <204>\r\n     but: was <201>",
+      "time" : {
+        "start" : 1707523729275,
+        "stop" : 1707523730782,
+        "duration" : 1507
+      }
+    }, {
+      "uid" : "c39d431923ef2dcd",
+      "status" : "failed",
+      "statusDetails" : "\r\nExpected: is <204>\r\n     but: was <201>",
+      "time" : {
+        "start" : 1707523628684,
+        "stop" : 1707523629906,
+        "duration" : 1222
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "624073f9c400d6a0.json",
+  "parameterValues" : [ "\"Delete request\"", "\"Task_2_positive\"" ]
+}

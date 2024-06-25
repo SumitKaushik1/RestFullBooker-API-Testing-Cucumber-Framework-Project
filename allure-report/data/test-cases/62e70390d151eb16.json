@@ -1,0 +1,98 @@
+{
+  "uid" : "62e70390d151eb16",
+  "name" : "Runs Cucumber Scenarios",
+  "fullName" : "io.cucumber.testng.AbstractTestNGCucumberTests.runScenario",
+  "historyId" : "a5eff1e4676b7ad53e862e523774f459",
+  "time" : {
+    "start" : 1707726574001,
+    "stop" : 1707726575609,
+    "duration" : 1608
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setUpClass",
+    "time" : {
+      "start" : 1707726573960,
+      "stop" : 1707726573995,
+      "duration" : 35
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDownClass",
+    "time" : {
+      "start" : 1707726577204,
+      "stop" : 1707726577330,
+      "duration" : 126
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "org.restfullbooker.runner.Runner4"
+  }, {
+    "name" : "testClass",
+    "value" : "org.restfullbooker.runner.Runner4"
+  }, {
+    "name" : "testMethod",
+    "value" : "runScenario"
+  }, {
+    "name" : "parentSuite",
+    "value" : "All Test Suite"
+  }, {
+    "name" : "suite",
+    "value" : "J:\\3. automation testing\\day36 ---full CUCUMBER BDD(framework), passingvaluesjustlikeenviromentvariabelinpostman\\Assignment answer\\com.restfullbooker"
+  }, {
+    "name" : "subSuite",
+    "value" : "org.restfullbooker.runner.Runner4"
+  }, {
+    "name" : "host",
+    "value" : "PRITAM-PC"
+  }, {
+    "name" : "thread",
+    "value" : "1288@PRITAM-PC.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "\"Post request to create token\""
+  }, {
+    "name" : "arg1",
+    "value" : "\"Task_5_Negative\""
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "62e70390d151eb16.json",
+  "parameterValues" : [ "\"Post request to create token\"", "\"Task_5_Negative\"" ]
+}

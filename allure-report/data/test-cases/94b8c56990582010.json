@@ -1,0 +1,60 @@
+{
+  "uid" : "94b8c56990582010",
+  "name" : "cucumberReport",
+  "fullName" : "org.restfullbooker.Report.CucumberReport.cucumberReport",
+  "historyId" : "6d2de5eb52f3355b0b832048c7813929",
+  "time" : {
+    "start" : 1707697646574,
+    "stop" : 1707697649130,
+    "duration" : 2556
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "org.restfullbooker.Report.CucumberReport"
+  }, {
+    "name" : "testClass",
+    "value" : "org.restfullbooker.Report.CucumberReport"
+  }, {
+    "name" : "testMethod",
+    "value" : "cucumberReport"
+  }, {
+    "name" : "parentSuite",
+    "value" : "All Test Suite"
+  }, {
+    "name" : "suite",
+    "value" : "J:\\3. automation testing\\day36 ---full CUCUMBER BDD(framework), passingvaluesjustlikeenviromentvariabelinpostman\\Assignment answer\\com.restfullbooker"
+  }, {
+    "name" : "subSuite",
+    "value" : "org.restfullbooker.Report.CucumberReport"
+  }, {
+    "name" : "host",
+    "value" : "PRITAM-PC"
+  }, {
+    "name" : "thread",
+    "value" : "7308@PRITAM-PC.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "94b8c56990582010.json",
+  "parameterValues" : [ ]
+}

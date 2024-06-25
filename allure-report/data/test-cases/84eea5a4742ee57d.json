@@ -1,0 +1,98 @@
+{
+  "uid" : "84eea5a4742ee57d",
+  "name" : "Runs Cucumber Scenarios",
+  "fullName" : "io.cucumber.testng.AbstractTestNGCucumberTests.runScenario",
+  "historyId" : "488c56f45e837eb2e2fe1e5dde00583b",
+  "time" : {
+    "start" : 1707547429114,
+    "stop" : 1707547431938,
+    "duration" : 2824
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setUpClass",
+    "time" : {
+      "start" : 1707547416773,
+      "stop" : 1707547418638,
+      "duration" : 1865
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDownClass",
+    "time" : {
+      "start" : 1707547434932,
+      "stop" : 1707547435365,
+      "duration" : 433
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "org.restfullbooker.runner.Runner"
+  }, {
+    "name" : "testClass",
+    "value" : "org.restfullbooker.runner.Runner"
+  }, {
+    "name" : "testMethod",
+    "value" : "runScenario"
+  }, {
+    "name" : "parentSuite",
+    "value" : "All Test Suite"
+  }, {
+    "name" : "suite",
+    "value" : "J:/3. automation testing/day36 ---full CUCUMBER BDD(framework), passingvaluesjustlikeenviromentvariabelinpostman/Assignment answer/com.restfullbooker/src/test/java"
+  }, {
+    "name" : "subSuite",
+    "value" : "org.restfullbooker.runner.Runner"
+  }, {
+    "name" : "host",
+    "value" : "PRITAM-PC"
+  }, {
+    "name" : "thread",
+    "value" : "6408@PRITAM-PC.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "\"Post request to create booking\""
+  }, {
+    "name" : "arg1",
+    "value" : "\"Task_1_positive\""
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "84eea5a4742ee57d.json",
+  "parameterValues" : [ "\"Post request to create booking\"", "\"Task_1_positive\"" ]
+}

@@ -1,0 +1,541 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "All Test Suite",
+    "children" : [ {
+      "name" : "J:/3. automation testing/day36 ---full CUCUMBER BDD(framework), passingvaluesjustlikeenviromentvariabelinpostman/Assignment answer/com.restfullbooker/src/test/java/org/restfullbooker/task_1_positive/_1_createtoken",
+      "children" : [ {
+        "name" : "org.restfullbooker.task_1_positive._1_createtoken.RestFullBookerRequestTokenURL",
+        "children" : [ {
+          "name" : "resfullBoookerResponseIsThere",
+          "uid" : "6b626f408afc810b",
+          "parentUid" : "5466edadaf71dd2c14e24f157fa522a6",
+          "status" : "broken",
+          "time" : {
+            "start" : 1705957589355,
+            "stop" : 1705957589604,
+            "duration" : 249
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "resfullBoookerResponseContainToken",
+          "uid" : "dc7be662ac975c3e",
+          "parentUid" : "5466edadaf71dd2c14e24f157fa522a6",
+          "status" : "broken",
+          "time" : {
+            "start" : 1705957591481,
+            "stop" : 1705957592103,
+            "duration" : 622
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "resfullBoookerTokenHeaderContentType",
+          "uid" : "78febc4aa71b18a4",
+          "parentUid" : "5466edadaf71dd2c14e24f157fa522a6",
+          "status" : "broken",
+          "time" : {
+            "start" : 1705957592130,
+            "stop" : 1705957592134,
+            "duration" : 4
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "resfullBoookerTokenBodyToken",
+          "uid" : "439ce61f8fa705fb",
+          "parentUid" : "5466edadaf71dd2c14e24f157fa522a6",
+          "status" : "broken",
+          "time" : {
+            "start" : 1705957592165,
+            "stop" : 1705957592189,
+            "duration" : 24
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "resfullBoookerTokenBodyJsonSchema",
+          "uid" : "bb9eb2f49c12f1a1",
+          "parentUid" : "5466edadaf71dd2c14e24f157fa522a6",
+          "status" : "broken",
+          "time" : {
+            "start" : 1705957592237,
+            "stop" : 1705957592244,
+            "duration" : 7
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "5466edadaf71dd2c14e24f157fa522a6"
+      } ],
+      "uid" : "19436a0107723715b1dd0b41b9187253"
+    }, {
+      "name" : "J:/3. automation testing/day36 ---full CUCUMBER BDD(framework), passingvaluesjustlikeenviromentvariabelinpostman/Assignment answer/com.restfullbooker/src/test/java",
+      "children" : [ {
+        "name" : "org.restfullbooker.runner.Runner",
+        "children" : [ {
+          "name" : "Runs Cucumber Scenarios",
+          "uid" : "7a2343ba80610394",
+          "parentUid" : "93f616792603138820a5620e7f27e9ca",
+          "status" : "broken",
+          "time" : {
+            "start" : 1707447185984,
+            "stop" : 1707447190440,
+            "duration" : 4456
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "\"Post request to create booking\"", "\"Task_4_positive\"" ]
+        }, {
+          "name" : "Runs Cucumber Scenarios",
+          "uid" : "79c9b8493ea490de",
+          "parentUid" : "93f616792603138820a5620e7f27e9ca",
+          "status" : "broken",
+          "time" : {
+            "start" : 1707447190733,
+            "stop" : 1707447190955,
+            "duration" : 222
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "\"Delete request\"", "\"Task_4_positive\"" ]
+        }, {
+          "name" : "Runs Cucumber Scenarios",
+          "uid" : "897085265ef4a7eb",
+          "parentUid" : "93f616792603138820a5620e7f27e9ca",
+          "status" : "failed",
+          "time" : {
+            "start" : 1707447190985,
+            "stop" : 1707447197078,
+            "duration" : 6093
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "\"Delete request\"", "\"Task_2_positive\"" ]
+        }, {
+          "name" : "Runs Cucumber Scenarios",
+          "uid" : "b8e895043beb94b6",
+          "parentUid" : "93f616792603138820a5620e7f27e9ca",
+          "status" : "passed",
+          "time" : {
+            "start" : 1707447197093,
+            "stop" : 1707447198741,
+            "duration" : 1648
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "\"Get request for deleted user\"", "\"Task_2_positive\"" ]
+        }, {
+          "name" : "Runs Cucumber Scenarios",
+          "uid" : "81d3cb41371b7d56",
+          "parentUid" : "93f616792603138820a5620e7f27e9ca",
+          "status" : "passed",
+          "time" : {
+            "start" : 1707447198761,
+            "stop" : 1707447205512,
+            "duration" : 6751
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "\"Get Request to get all booking\"", "\"Task_3_positive\"" ]
+        }, {
+          "name" : "Runs Cucumber Scenarios",
+          "uid" : "6559f6c940e340de",
+          "parentUid" : "93f616792603138820a5620e7f27e9ca",
+          "status" : "passed",
+          "time" : {
+            "start" : 1707447205658,
+            "stop" : 1707447207703,
+            "duration" : 2045
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "\"Put Request to update  booking\"", "\"Task_3_positive\"" ]
+        }, {
+          "name" : "Runs Cucumber Scenarios",
+          "uid" : "619944134841fde6",
+          "parentUid" : "93f616792603138820a5620e7f27e9ca",
+          "status" : "passed",
+          "time" : {
+            "start" : 1707447207712,
+            "stop" : 1707447210113,
+            "duration" : 2401
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "\"Get Request to get  bookingid\"", "\"Task_3_positive\"" ]
+        } ],
+        "uid" : "93f616792603138820a5620e7f27e9ca"
+      }, {
+        "name" : "org.restfullbooker.runner.Runner1",
+        "children" : [ {
+          "name" : "Runs Cucumber Scenarios",
+          "uid" : "f214a5e101941d9b",
+          "parentUid" : "60e18b2c6879cd06ef73edf7420518a6",
+          "status" : "broken",
+          "time" : {
+            "start" : 1707523368859,
+            "stop" : 1707523369022,
+            "duration" : 163
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "\"Get Request to get all booking\"", "\"Task_3_positive\"" ]
+        }, {
+          "name" : "Runs Cucumber Scenarios",
+          "uid" : "3111e91ed7a48c35",
+          "parentUid" : "60e18b2c6879cd06ef73edf7420518a6",
+          "status" : "broken",
+          "time" : {
+            "start" : 1707523369094,
+            "stop" : 1707523369133,
+            "duration" : 39
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "\"Put Request to update  booking\"", "\"Task_3_positive\"" ]
+        }, {
+          "name" : "Runs Cucumber Scenarios",
+          "uid" : "547e91d45e68e364",
+          "parentUid" : "60e18b2c6879cd06ef73edf7420518a6",
+          "status" : "broken",
+          "time" : {
+            "start" : 1707523369165,
+            "stop" : 1707523369202,
+            "duration" : 37
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "\"Get Request to get  bookingid\"", "\"Task_3_positive\"" ]
+        } ],
+        "uid" : "60e18b2c6879cd06ef73edf7420518a6"
+      }, {
+        "name" : "org.restfullbooker.runner.Runner3",
+        "children" : [ {
+          "name" : "setUpClass",
+          "uid" : "9beb830ba98b6391",
+          "parentUid" : "d84f1f74d4e9d303744cb607e1a710c8",
+          "status" : "broken",
+          "time" : {
+            "start" : 1707525139288,
+            "stop" : 1707525139290,
+            "duration" : 2
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "d84f1f74d4e9d303744cb607e1a710c8"
+      }, {
+        "name" : "org.restfullbooker.runner.Hookers",
+        "children" : [ {
+          "name" : "tearDown",
+          "uid" : "f83f975d13b104c2",
+          "parentUid" : "470486edb2bd82fed7576f233cb8c4e8",
+          "status" : "passed",
+          "time" : {
+            "start" : 1707547644120,
+            "stop" : 1707547647390,
+            "duration" : 3270
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "470486edb2bd82fed7576f233cb8c4e8"
+      }, {
+        "name" : "org.restfullbooker.Report.CucumberReport",
+        "children" : [ {
+          "name" : "tearDown",
+          "uid" : "2c9bfb1f16908a51",
+          "parentUid" : "62d0b633b546a9bf5d82cd76950b6f74",
+          "status" : "passed",
+          "time" : {
+            "start" : 1707548095386,
+            "stop" : 1707548099567,
+            "duration" : 4181
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "62d0b633b546a9bf5d82cd76950b6f74"
+      } ],
+      "uid" : "375649a0eab7769d1e37d0f16e534a40"
+    }, {
+      "name" : "J:\\3. automation testing\\day36 ---full CUCUMBER BDD(framework), passingvaluesjustlikeenviromentvariabelinpostman\\Assignment answer\\com.restfullbooker",
+      "children" : [ {
+        "name" : "org.restfullbooker.runner.Runner5",
+        "children" : [ {
+          "name" : "Runs Cucumber Scenarios",
+          "uid" : "d927749132467347",
+          "parentUid" : "c5b0b17a2ffa4064454db5e80c4af247",
+          "status" : "passed",
+          "time" : {
+            "start" : 1707727855379,
+            "stop" : 1707727857842,
+            "duration" : 2463
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "\"Get Request to get all booking\"", "\"Task_3_positive\"" ]
+        }, {
+          "name" : "Runs Cucumber Scenarios",
+          "uid" : "c2a683d2186280ef",
+          "parentUid" : "c5b0b17a2ffa4064454db5e80c4af247",
+          "status" : "passed",
+          "time" : {
+            "start" : 1707727857861,
+            "stop" : 1707727859079,
+            "duration" : 1218
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "\"Put Request to update  booking\"", "\"Task_3_positive\"" ]
+        }, {
+          "name" : "Runs Cucumber Scenarios",
+          "uid" : "83de98cf09204f63",
+          "parentUid" : "c5b0b17a2ffa4064454db5e80c4af247",
+          "status" : "passed",
+          "time" : {
+            "start" : 1707880809697,
+            "stop" : 1707880811881,
+            "duration" : 2184
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "\"Get Request to get all booking\"", "\"Task_6_Negative\"" ]
+        }, {
+          "name" : "Runs Cucumber Scenarios",
+          "uid" : "b5ecd934b9311522",
+          "parentUid" : "c5b0b17a2ffa4064454db5e80c4af247",
+          "status" : "passed",
+          "time" : {
+            "start" : 1707880811897,
+            "stop" : 1707880813133,
+            "duration" : 1236
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "\"Put Request to update  booking\"", "\"Task_6_Negative\"" ]
+        } ],
+        "uid" : "c5b0b17a2ffa4064454db5e80c4af247"
+      }, {
+        "name" : "org.restfullbooker.runner.Runner",
+        "children" : [ {
+          "name" : "Runs Cucumber Scenarios",
+          "uid" : "44707f7fe37ec43",
+          "parentUid" : "d69bae6b9707e7f5f859ebbd3661b53c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1707880775609,
+            "stop" : 1707880791065,
+            "duration" : 15456
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "\"Post request to create token\"", "\"Task_1_positive\"" ]
+        }, {
+          "name" : "Runs Cucumber Scenarios",
+          "uid" : "9fe82540b52cf742",
+          "parentUid" : "d69bae6b9707e7f5f859ebbd3661b53c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1707880791215,
+            "stop" : 1707880792743,
+            "duration" : 1528
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "\"Post request to create booking\"", "\"Task_1_positive\"" ]
+        }, {
+          "name" : "Runs Cucumber Scenarios",
+          "uid" : "cfb9d591ee2cc343",
+          "parentUid" : "d69bae6b9707e7f5f859ebbd3661b53c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1707880792756,
+            "stop" : 1707880794259,
+            "duration" : 1503
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "\"patch request  to update bookingName\"", "\"Task_1_positive\"" ]
+        }, {
+          "name" : "Runs Cucumber Scenarios",
+          "uid" : "8cdb0403cb0b81ad",
+          "parentUid" : "d69bae6b9707e7f5f859ebbd3661b53c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1707880794269,
+            "stop" : 1707880795585,
+            "duration" : 1316
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "\"Get  request to get  booking\"", "\"Task_1_positive\"" ]
+        } ],
+        "uid" : "d69bae6b9707e7f5f859ebbd3661b53c"
+      }, {
+        "name" : "org.restfullbooker.runner.Runner1",
+        "children" : [ {
+          "name" : "Runs Cucumber Scenarios",
+          "uid" : "624073f9c400d6a0",
+          "parentUid" : "87972cc6e1812dd7f8be07b550413d47",
+          "status" : "failed",
+          "time" : {
+            "start" : 1707880796170,
+            "stop" : 1707880797448,
+            "duration" : 1278
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "\"Delete request\"", "\"Task_2_positive\"" ]
+        }, {
+          "name" : "Runs Cucumber Scenarios",
+          "uid" : "b0538396a69fe812",
+          "parentUid" : "87972cc6e1812dd7f8be07b550413d47",
+          "status" : "passed",
+          "time" : {
+            "start" : 1707880797486,
+            "stop" : 1707880798689,
+            "duration" : 1203
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "\"Get request for deleted user\"", "\"Task_2_positive\"" ]
+        } ],
+        "uid" : "87972cc6e1812dd7f8be07b550413d47"
+      }, {
+        "name" : "org.restfullbooker.runner.Runner2",
+        "children" : [ {
+          "name" : "Runs Cucumber Scenarios",
+          "uid" : "ad0ec7aab083d99e",
+          "parentUid" : "4eadb7c87ab7835490aac0392036b042",
+          "status" : "passed",
+          "time" : {
+            "start" : 1707880798937,
+            "stop" : 1707880801407,
+            "duration" : 2470
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "\"Get Request to get all booking\"", "\"Task_3_positive\"" ]
+        }, {
+          "name" : "Runs Cucumber Scenarios",
+          "uid" : "141c192a8a671a16",
+          "parentUid" : "4eadb7c87ab7835490aac0392036b042",
+          "status" : "passed",
+          "time" : {
+            "start" : 1707880801441,
+            "stop" : 1707880802765,
+            "duration" : 1324
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "\"Put Request to update  booking\"", "\"Task_3_positive\"" ]
+        }, {
+          "name" : "Runs Cucumber Scenarios",
+          "uid" : "6e175ea7a3dc32c8",
+          "parentUid" : "4eadb7c87ab7835490aac0392036b042",
+          "status" : "passed",
+          "time" : {
+            "start" : 1707880802776,
+            "stop" : 1707880804034,
+            "duration" : 1258
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "\"Get Request to get  bookingid\"", "\"Task_3_positive\"" ]
+        } ],
+        "uid" : "4eadb7c87ab7835490aac0392036b042"
+      }, {
+        "name" : "org.restfullbooker.runner.Runner3",
+        "children" : [ {
+          "name" : "Runs Cucumber Scenarios",
+          "uid" : "d1831c9ad121cd55",
+          "parentUid" : "1231bbb9e09d40838a25593e7e7fa392",
+          "status" : "passed",
+          "time" : {
+            "start" : 1707880804257,
+            "stop" : 1707880805629,
+            "duration" : 1372
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "\"Post request to create booking\"", "\"Task_4_positive\"" ]
+        }, {
+          "name" : "Runs Cucumber Scenarios",
+          "uid" : "60d361ff4dde11be",
+          "parentUid" : "1231bbb9e09d40838a25593e7e7fa392",
+          "status" : "failed",
+          "time" : {
+            "start" : 1707880805662,
+            "stop" : 1707880806873,
+            "duration" : 1211
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "\"Delete request\"", "\"Task_4_positive\"" ]
+        } ],
+        "uid" : "1231bbb9e09d40838a25593e7e7fa392"
+      }, {
+        "name" : "org.restfullbooker.runner.Runner4",
+        "children" : [ {
+          "name" : "Runs Cucumber Scenarios",
+          "uid" : "f9a50df85ffc48b4",
+          "parentUid" : "e6e8570a6e78ad2487a4827954fe026e",
+          "status" : "passed",
+          "time" : {
+            "start" : 1707880807059,
+            "stop" : 1707880808322,
+            "duration" : 1263
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "\"Post request to create token\"", "\"Task_5_Negative\"" ]
+        }, {
+          "name" : "Runs Cucumber Scenarios",
+          "uid" : "cf1f9744932e14e",
+          "parentUid" : "e6e8570a6e78ad2487a4827954fe026e",
+          "status" : "broken",
+          "time" : {
+            "start" : 1707880808332,
+            "stop" : 1707880809512,
+            "duration" : 1180
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "\"Post request with wrong text payload\"", "\"Task_5_Negative\"" ]
+        } ],
+        "uid" : "e6e8570a6e78ad2487a4827954fe026e"
+      }, {
+        "name" : "org.restfullbooker.Report.CucumberReport",
+        "children" : [ {
+          "name" : "cucumberReport",
+          "uid" : "f19673d1d3752e0d",
+          "parentUid" : "7e349f2d240dc8b4b7006d2684f7c1f7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1707880813287,
+            "stop" : 1707880821772,
+            "duration" : 8485
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "7e349f2d240dc8b4b7006d2684f7c1f7"
+      } ],
+      "uid" : "d40b19a7760026d159b7996f63108c38"
+    } ],
+    "uid" : "7d0421919ebcae780c955830177c9415"
+  } ]
+}
